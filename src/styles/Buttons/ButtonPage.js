@@ -12,6 +12,7 @@ const Wrapper = styled(motion(Link))`
     height:4rem;
     min-width:10rem;
     padding:1.5rem 2rem;
+    position:relative;
     transition: .12s linear filter;
 
     &:hover{
