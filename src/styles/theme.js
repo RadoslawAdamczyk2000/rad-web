@@ -1,0 +1,74 @@
+const theme = {
+    colors:{
+        article:{
+            background:'#fff',
+            link:'#ea0f1e',
+            subTitle:'#888',
+            text:'#000'
+        },
+        page:{
+            background:'#0A192F',
+            buttons:'#44e3bb',
+            card:'#112240',
+            navigation:{
+                desktop:{
+                    color:'#8892b0',
+                    hoverColor:'#44e3bb'
+                },
+                mobile:{
+                    background:'#44e3bb',
+                    color:'#ccd6f6',
+                }
+            },
+            title:'#ccd6f6', 
+            special:'#ffc800',
+            subTitle:'#8892b0'
+        }
+    },
+    fonts:{
+        family:{
+            primary:"'Inter', sans-serif",
+            secondary:"'Fira Code', monospace"
+        },
+        size:{
+            article:{
+                content:'1.8rem',
+                excerpt:'2.4rem',
+                heading:'2rem',
+                navigation:'5rem',
+                title:{
+                    desktop:'5.4rem',
+                    mobile:'2.6rem',
+                    tablet:'3.52rem'
+                },
+                subTitle:'2rem'
+            },
+            page:{
+                button:'1.4rem',
+                content:'2rem',
+                navigation:'1.4rem',
+                title:{
+                    desktop:'8rem',
+                    mobile:'4rem'
+                },
+                subTitle:'3.2rem'
+            }
+        },
+        weight:{
+            article:{
+                excerpt:500,
+                secondary:700,
+                regular:400,
+                title:900
+            },
+            page:{
+                regular:400,
+                title:700,
+                secondary:200,
+                subTitle:700
+            }
+        }
+    }
+}
+
+export default theme;
