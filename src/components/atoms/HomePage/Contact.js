@@ -15,7 +15,7 @@ const Contact = () => {
             </Text>
             <div>
                 <ButtonPage>
-                    napisz
+                    Napisz!
                 </ButtonPage>
             </div>
         </ContactSectionWrapper>

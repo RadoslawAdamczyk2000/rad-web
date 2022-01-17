@@ -51,7 +51,6 @@ const OfferSnapCardWrapper = styled.div`
 
         &:nth-of-type(2){
             align-items:center;
-            background-color:${({theme}) => theme.colors.page.card};
             display:flex;
             height:100%;
             justify-content:center;
