@@ -4,6 +4,8 @@ const BlogSectionWrapper = styled.div`
     display:grid;
     grid-template-columns:1fr 2fr;
     grid-row-gap:5rem;
+    margin:10rem auto;
+
     & > .content {
         padding:1.5rem;
 
