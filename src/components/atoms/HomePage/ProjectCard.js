@@ -1,8 +1,7 @@
 import React from 'react';
 import ButtonLink from '../../../styles/Buttons/ButtonLink';
 import ProjectCardWrapper from '../../../styles/Containers/ProjectCardWrapper';
-import PropTypes, { array } from 'prop-types';
-import TitleSection from '../../../styles/Titles/TitleSection';
+import PropTypes from 'prop-types';
 
 const ProjectCard = ({ image, path, tech, title}) => {
     return(

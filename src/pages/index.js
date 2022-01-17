@@ -3,6 +3,7 @@ import ArticleCard from '../components/atoms/HomePage/ArticleCard';
 import Hero from '../components/atoms/HomePage/Hero';
 import ProjectCard from '../components/atoms/HomePage/ProjectCard';
 import Blog from '../components/molecule/HomePage/Blog';
+import Offer from '../components/molecule/HomePage/Offer';
 import Projects from '../components/molecule/HomePage/Projects';
 import tech from '../data/tech';
 import ButtonLink from '../styles/Buttons/ButtonLink';
@@ -18,6 +19,7 @@ const HomePage = () => {
           <Hero/>
           <Blog/>
           <Projects/>
+          <Offer/>
       </Layout>
   )
 }
