@@ -11,6 +11,10 @@ const BlogSectionWrapper = styled.div`
             margin:2.5rem 0;
         }
 
+        & > h2{
+            color:${({theme}) => theme.colors.page.title};
+        }
+
         & > p{
             font-size:1.75rem;
             line-height:2.5rem;

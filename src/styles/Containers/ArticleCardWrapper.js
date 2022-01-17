@@ -52,8 +52,6 @@ const ArticleCardWrapper = styled.div`
         padding:.5rem 2rem;
 
         & > p{
-            text-align:justify;
-            text-indent:5rem;
             width:100%;
         }
     }
