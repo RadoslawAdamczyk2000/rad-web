@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const OfferSectionWrapper = styled.div`
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
     margin:10rem 0;
 
     & > .cards{
@@ -18,14 +22,6 @@ const OfferSectionWrapper = styled.div`
             }
         }
     }
-
-    & > .content{
-        & > h2{
-            color:${({theme}) => theme.colors.page.title};
-            margin:2.5rem 0;
-        }
-    }
-
 `
 
 export default OfferSectionWrapper;

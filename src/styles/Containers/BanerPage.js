@@ -13,9 +13,6 @@ const BanerPage = styled.div`
 
     & > div{
 
-        & > div:nth-of-type(1){
-        }
-
          & > div:nth-of-type(2){
              margin:3rem 0;
              width:50%;
@@ -23,6 +20,10 @@ const BanerPage = styled.div`
             @media only screen and (max-width:700px){
                 width:75%;
             }
+         }
+
+         & > div:nth-of-type(3){
+             display:flex;
          }
         /* & > div:nth-of-type() */
     }

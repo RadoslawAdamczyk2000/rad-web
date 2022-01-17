@@ -1,5 +1,6 @@
 import React from 'react';
 import ArticleCard from '../components/atoms/HomePage/ArticleCard';
+import Contact from '../components/atoms/HomePage/Contact';
 import Hero from '../components/atoms/HomePage/Hero';
 import ProjectCard from '../components/atoms/HomePage/ProjectCard';
 import Blog from '../components/molecule/HomePage/Blog';
@@ -20,6 +21,7 @@ const HomePage = () => {
           <Blog/>
           <Projects/>
           <Offer/>
+          <Contact/>
       </Layout>
   )
 }

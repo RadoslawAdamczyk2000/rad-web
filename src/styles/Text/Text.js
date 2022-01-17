@@ -5,6 +5,7 @@ const Wrapper = styled.p`
     color:${({isArticle, theme}) => isArticle ? theme.colors.article.text : theme.colors.page.subTitle};
     font-size:${({isArticle, theme}) => isArticle ? theme.fonts.size.article.content : theme.fonts.size.page.content};
     font-weight:${({isArticle, theme}) => isArticle ? theme.fonts.weight.article.regular : theme.fonts.weight.page.regular};
+    text-align:${({isCenter}) => isCenter ? 'center' : 'start'};
 
     & > a{
         color:${({theme}) => theme.colors.page.special};
@@ -20,9 +21,9 @@ const Wrapper = styled.p`
     }
 `
 
-const Text = ({children, isArticle}) => {
+const Text = ({children, isArticle, isCenter}) => {
     return(
-        <Wrapper isArticle={isArticle}>
+        <Wrapper isArticle={isArticle} isCenter={isCenter}>
             {children}
         </Wrapper>
     )

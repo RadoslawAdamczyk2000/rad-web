@@ -9,7 +9,7 @@ const Blog = () => {
     return(
         <BlogSectionWrapper>
             <div className='content'>
-                <TitleSection>
+                <TitleSection isHeading>
                 Blog
                 </TitleSection>
                 <Text>

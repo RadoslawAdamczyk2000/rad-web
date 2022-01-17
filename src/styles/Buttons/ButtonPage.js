@@ -1,17 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
-import {motion} from 'framer-motion';
 import {Link} from 'gatsby';
 
-const Wrapper = styled(motion(Link))`
+const Wrapper = styled(Link)`
+    align-items:center;
     border: .25rem solid ${({theme}) => theme.colors.page.buttons};
     color:${({theme}) => theme.colors.page.buttons};
+    display:flex;
     font-family:${({theme}) => theme.fonts.family.secondary};
     font-size:${({theme}) => theme.fonts.size.page.button};
     font-weight:${({theme}) => theme.fonts.weight.page.secondary};
-    height:4rem;
+    height:5rem;
+    justify-content:center;
+    padding:.5rem 1.5rem;
     min-width:10rem;
-    padding:1.5rem 2rem;
     position:relative;
     transition: .12s linear filter;
 

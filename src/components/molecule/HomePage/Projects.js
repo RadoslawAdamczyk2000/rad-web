@@ -10,10 +10,10 @@ const Projects = () => {
     return(
         <ProjectsSectionWrapper>
             <div className='content'>
-              <TitleSection>
+              <TitleSection isCenter isHeading>
                 Projekty
               </TitleSection>
-              <Text>
+              <Text isCenter>
                 Minima voluptas debitis reiciendis molestiae et nam iure. Sed tempora et saepe et occaecati aperiam doloremque est temporibus. Accusamus veniam et libero nisi qui. Repellendus quis delectus at excepturi. Ipsam soluta nam deserunt nesciunt voluptatem atque voluptate similique similique. Voluptas veniam qui recusandae aliquid voluptate odit.
               </Text>
             </div>
@@ -28,9 +28,11 @@ const Projects = () => {
                 title='Future Brand Coordinator'
               />
             </div>
-            <ButtonPage>
-                wszystkie projekty
-            </ButtonPage>
+            <div className='button'>
+                <ButtonPage>
+                    wszystkie projekty
+                </ButtonPage>
+            </div>
         </ProjectsSectionWrapper>
     )
 }

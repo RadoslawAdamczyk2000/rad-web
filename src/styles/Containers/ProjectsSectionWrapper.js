@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 const ProjectsSectionWrapper = styled.div`
+    flex-direction:column;
     margin:10rem auto;
 
     & > .content {
         & > h2{
-            color:${({theme}) => theme.colors.page.title};
-            margin:2.5rem 0;
         }
     }
 
@@ -25,6 +24,11 @@ const ProjectsSectionWrapper = styled.div`
                 grid-template-columns:repeat( 1, 1fr);
             }
         }
+    }
+
+    & > .button{
+        display:flex;
+        justify-content:center;
     }
 `
 

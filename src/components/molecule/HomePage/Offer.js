@@ -11,10 +11,10 @@ const Offer = () => {
     return(
         <OfferSectionWrapper>
             <div className='content'>
-                <TitleSection>
+                <TitleSection isCenter isHeading>
                     Oferta
                 </TitleSection>
-                <Text>
+                <Text isCenter>
                     Zapraszam do skorzystania z bogatej oferty, gdzie z pewnością znajdziesz coś dla siebie. Wśród proponowanych usług znajdziesz między innymi tworzenie stron internetowych napisanych w technologiach takich jak Gatsby.js, który od kilku lat śmiało wkracza na światową scenę, oraz WordPress, który swoją popularnością zjednał wielu użytkowników. Oferuję również pozycjonowanie serwisów w wyszukiwarce Google z użyciem topowych narzędzi, w tym kampanie mailingowe, a także Google Ads oraz bezpłatną podstawową analizę witryn internetowych pod kątem SEO.
                 </Text>
             </div>
