@@ -1,4 +1,5 @@
 import ButtonPage from '../../../styles/Buttons/ButtonPage';
+import OfferSectionWrapper from '../../../styles/Containers/OfferSectionWrapper';
 import OfferSnapCard from '../../atoms/HomePage/OfferSnapCard';
 import React from 'react';
 import TitleSection from '../../../styles/Titles/TitleSection';
@@ -8,8 +9,8 @@ import {VscVm, VscDebugAll} from 'react-icons/vsc';
 
 const Offer = () => {
     return(
-        <div>
-            <div>
+        <OfferSectionWrapper>
+            <div className='content'>
                 <TitleSection>
                     Oferta
                 </TitleSection>
@@ -17,7 +18,7 @@ const Offer = () => {
                     Zapraszam do skorzystania z bogatej oferty, gdzie z pewnością znajdziesz coś dla siebie. Wśród proponowanych usług znajdziesz między innymi tworzenie stron internetowych napisanych w technologiach takich jak Gatsby.js, który od kilku lat śmiało wkracza na światową scenę, oraz WordPress, który swoją popularnością zjednał wielu użytkowników. Oferuję również pozycjonowanie serwisów w wyszukiwarce Google z użyciem topowych narzędzi, w tym kampanie mailingowe, a także Google Ads oraz bezpłatną podstawową analizę witryn internetowych pod kątem SEO.
                 </Text>
             </div>
-            <div>
+            <div className='cards'>
                 <OfferSnapCard
                     icon={<VscVm/>}
                     title='Strony internetowe'
@@ -37,7 +38,7 @@ const Offer = () => {
             <ButtonPage>
                 więcej
             </ButtonPage>
-        </div>
+        </OfferSectionWrapper>
     )
 }
 

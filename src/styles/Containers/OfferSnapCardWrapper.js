@@ -6,6 +6,7 @@ const OfferSnapCardWrapper = styled.div`
     flex-direction:column;
     height:30rem;
     justify-content:start;
+    margin:auto;
     overflow:hidden;
     position:relative;
     width:30rem;
