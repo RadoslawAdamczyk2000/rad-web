@@ -4,7 +4,7 @@ import styled,{css} from 'styled-components';
 
 const Wrapper = styled(motion.button)`
     align-items:center;
-    display:flex;
+    display:none;
     flex-direction:column;
     height:3.75rem;
     justify-content:space-evenly;

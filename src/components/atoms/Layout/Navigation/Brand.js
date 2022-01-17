@@ -1,10 +1,11 @@
 import React from 'react';
+import BrandWrapper from '../../../../styles/Containers/BrandWrapper';
 
 const Brand = () => {
     return(
-        <div>
+        <BrandWrapper>
             RadWEB
-        </div>
+        </BrandWrapper>
     )
 }
 
