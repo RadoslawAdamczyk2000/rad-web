@@ -6,7 +6,9 @@ import Text from '../../../styles/Text/Text';
 import TitleSection from '../../../styles/Titles/TitleSection';
 import ProjectCard from '../../atoms/HomePage/ProjectCard';
 
-const Projects = () => {
+const Projects = ({data}) => {
+  console.log(data.allDatoCmsProject.edges[0].node.title);
+
     return(
         <ProjectsSectionWrapper>
             <div className='content'>
@@ -18,15 +20,15 @@ const Projects = () => {
               </Text>
             </div>
             <div className='projects'>
-              <ProjectCard
-                image='https://cdn.pixabay.com/photo/2021/11/16/18/10/nature-6801719_960_720.jpg'
-                tech={[tech.html, tech.css, tech.bootstrap]}
-                title='Future Brand Coordinator'
-              />
-              <ProjectCard
-                image='https://cdn.pixabay.com/photo/2021/11/16/18/10/nature-6801719_960_720.jpg'
-                title='Future Brand Coordinator'
-              />
+              {
+                data.allDatoCmsProject.edges.map( ({node}) => 
+                  <ProjectCard
+                    image={node.poster.url}
+                    title={node.title}
+                    path={'/projects/' + node.slug}
+                  />
+                )
+              }
             </div>
             <div className='button'>
                 <ButtonPage>

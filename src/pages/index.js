@@ -8,9 +8,6 @@ import Layout from '../templates/Layout';
 import {graphql} from 'gatsby';
 
 const HomePage = ({data}) => {
-
-  
-
   return(
       <Layout
         metaDescription='Zapraszam do skorzystania z moich usług z zakresu tworzenia stron internetowych oraz kompleksowego pozycjonowania serwisów w wyszukiwarce Google.'
@@ -18,7 +15,7 @@ const HomePage = ({data}) => {
       >
           <Hero/>
           <Blog data={data}/>
-          <Projects/>
+          <Projects data={data}/>
           <Offer/>
           <Contact/>
       </Layout>
@@ -36,7 +33,21 @@ export const getSomePosts = graphql`
         }
       }
     }
+    allDatoCmsProject(limit: 6, sort: {fields: meta___publishedAt}) {
+      edges {
+        node {
+          slug
+          tags
+          title
+          poster {
+            url
+          }
+        }
+      }
+    }
   }
 `
+
+
 
 export default HomePage;

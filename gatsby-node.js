@@ -22,3 +22,27 @@ exports.createPages = async ({graphql, actions}) => {
         })
     ))
 }
+
+exports.createPages = async ({graphql, actions}) => {
+
+    const {data} = await graphql(`
+        query projectsLink {
+            allDatoCmsProject {
+            edges {
+                node {
+                    slug
+                }
+            }
+            }
+        }
+      
+    `)
+
+    data.allDatoCmsProject.edges.forEach(({node}) => (
+        actions.createPage({
+            path:'/projects/' + node.slug,
+            component:path.resolve('./src/templates/ProjectTemplate.js'),
+            context:{slug:node.slug}
+        })
+    ))
+}
