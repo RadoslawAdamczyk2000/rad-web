@@ -5,16 +5,16 @@ const Box = styled.div`
     margin:0 auto 5rem;
     max-height:auto;
     min-height:80rem;
-    width:75vw;
+    width:${({isArticle}) => isArticle ? '70vw' : '75vw'};
 
     @media only screen and (max-width:700px){
-        width:85vw;
+        width:${({isArticle}) => isArticle ? '80vw' : '85vw'};
     }
 `
 
-const Wrapper = ({children}) => {
+const Wrapper = ({children, isArticle}) => {
     return(
-        <Box>
+        <Box isArticle={isArticle}>
             {children}
         </Box>
     )

@@ -17,7 +17,7 @@ const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, ca
             />
             <Global isArticle={isArticle}/>
             {isArticle ?? <Navigation/>}
-            <Wrapper>
+            <Wrapper isArticle={isArticle}>
                 {children}
             </Wrapper>
         </ThemeProvider>
