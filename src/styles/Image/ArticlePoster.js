@@ -3,7 +3,6 @@ import React from 'react';
 
 const Wrapper = styled.div`
     align-items:center;
-    background-color:red;
     border-radius:2rem;
     box-shadow:-.5rem .25rem .5rem hsla(0,100%,0%,.15);
     display:flex;
