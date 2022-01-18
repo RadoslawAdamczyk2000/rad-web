@@ -24,7 +24,7 @@ const HomePage = ({data}) => {
 
 export const getSomePosts = graphql`
   query somePosts {
-    allDatoCmsArticle(limit: 4, sort: {order: DESC, fields: meta___publishedAt}){
+    allDatoCmsArticle(limit: 4, sort: {order: ASC, fields: meta___publishedAt}){
       edges {
         node {
           title
