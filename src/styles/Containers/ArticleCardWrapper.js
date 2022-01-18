@@ -40,6 +40,7 @@ const ArticleCardWrapper = styled.div`
         font-size:${({theme}) => theme.fonts.size.page.content};
         margin:1rem 0;
         padding:.25rem 1rem;
+        text-align:center;
         transition: .12s linear color;
 
         &:hover{

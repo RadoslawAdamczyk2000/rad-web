@@ -5,7 +5,13 @@ import Text from '../../../styles/Text/Text';
 import TitleSection from '../../../styles/Titles/TitleSection';
 import ArticleCard from '../../atoms/HomePage/ArticleCard';
 
-const Blog = () => {
+const Blog = ({data}) => {
+
+
+// console.log(data.allDatoCmsArticle.edges[0].node.title);
+// console.log(data.allDatoCmsArticle.edges[0].node.slug);
+// console.log(data.allDatoCmsArticle.edges[0].node.excerpt);
+
     return(
         <BlogSectionWrapper>
             <div className='content'>
@@ -20,7 +26,16 @@ const Blog = () => {
                 </ButtonPage>
             </div>
             <div className='articles'>
-                <ArticleCard 
+                {
+                    data.allDatoCmsArticle.edges.map(({node}) => (
+                        <ArticleCard
+                            title={node.title}
+                            excerpt={node.excerpt}
+                            path={'/blog/'+ node.slug}
+                        />
+                    ))
+                }
+                {/* <ArticleCard 
                 type='lifestyle' 
                 title='Jak zostałem pozycjonrem' 
                 excerpt='To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.'
@@ -39,7 +54,7 @@ const Blog = () => {
                 type='lifestyle' 
                 title='Jak zostałem pozycjonrem' 
                 excerpt='To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.'
-                />
+                /> */}
             </div>
           </BlogSectionWrapper>
     )

@@ -4,6 +4,9 @@ module.exports = {
         siteUrl: `https://www.yourdomain.tld`,
     },
     plugins: [
+      `gatsby-plugin-image`,
+      `gatsby-plugin-sharp`,
+      `gatsby-transformer-sharp`,
       {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -29,11 +32,6 @@ module.exports = {
         resolve: `gatsby-source-datocms`,
         options: {
           apiToken: `ed1726e97d820bd336169cf7ac7ddb`,
-          previewMode: false,
-          disableLiveReload: true,
-          localeFallbacks: {
-            it: ['pl'],
-          },
         },
       },
     ]
