@@ -33,7 +33,7 @@ export const getSomePosts = graphql`
         }
       }
     }
-    allDatoCmsProject(limit: 6, sort: {fields: meta___publishedAt}) {
+    allDatoCmsProject(limit: 6, sort: {order: DESC, fields: meta___publishedAt}) {
       edges {
         node {
           slug

@@ -11,6 +11,13 @@ exports.createPages = async ({graphql, actions}) => {
                 }
             }
             }
+            allDatoCmsProject {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
         }
     `)
 
@@ -21,22 +28,6 @@ exports.createPages = async ({graphql, actions}) => {
             context:{slug:node.slug}
         })
     ))
-}
-
-exports.createPages = async ({graphql, actions}) => {
-
-    const {data} = await graphql(`
-        query projectsLink {
-            allDatoCmsProject {
-            edges {
-                node {
-                    slug
-                }
-            }
-            }
-        }
-      
-    `)
 
     data.allDatoCmsProject.edges.forEach(({node}) => (
         actions.createPage({
