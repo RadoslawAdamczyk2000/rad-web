@@ -36,7 +36,7 @@ const BlogPage = ({data}) => {
 
 export const getAllArticles = graphql`
     query AllArticles {
-  allDatoCmsArticle(sort: {fields: meta___publishedAt, order: DESC}) {
+  allDatoCmsArticle(sort: {fields: meta___publishedAt, order: ASC}) {
     edges {
       node {
         title

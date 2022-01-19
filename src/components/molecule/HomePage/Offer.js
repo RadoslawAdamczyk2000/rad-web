@@ -35,7 +35,7 @@ const Offer = () => {
                     content='Profesjonalna analiza serwisów, po której otrzymasz m.in. raport z proponowanymi słowami kluczowymi, co jest istotne w pracy nad rozwojem serwisu.'
                 />
             </div>
-            <ButtonPage>
+            <ButtonPage path='/offer'>
                 więcej
             </ButtonPage>
         </OfferSectionWrapper>

@@ -31,7 +31,7 @@ const Projects = ({data}) => {
               }
             </div>
             <div className='button'>
-                <ButtonPage>
+                <ButtonPage path='/projects'>
                     wszystkie projekty
                 </ButtonPage>
             </div>

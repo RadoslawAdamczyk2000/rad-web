@@ -29,7 +29,7 @@ const Hero = () => {
                   </Text>
                 </div>
                 <div>
-                  <ButtonPage>
+                  <ButtonPage path='/about'>
                     Zobacz więcej
                   </ButtonPage>
                 </div>

@@ -14,7 +14,7 @@ const Contact = () => {
                 Jeśli zaintrygowała Ciebie moja osoba i oferta, to zapraszam do kontaktu. Na pewno ustalimy kompromisowe rozwiązanie.
             </Text>
             <div>
-                <ButtonPage>
+                <ButtonPage path='/contact'>
                     Napisz!
                 </ButtonPage>
             </div>

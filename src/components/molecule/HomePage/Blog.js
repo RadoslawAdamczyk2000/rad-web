@@ -21,7 +21,7 @@ const Blog = ({data}) => {
                 <Text>
                 Minima voluptas debitis reiciendis molestiae et nam iure. Sed tempora et saepe et occaecati aperiam doloremque est temporibus. Accusamus veniam et libero nisi qui. Repellendus quis delectus at excepturi. Ipsam soluta nam deserunt nesciunt voluptatem atque voluptate similique similique. Voluptas veniam qui recusandae aliquid voluptate odit.
                 </Text>
-                <ButtonPage>
+                <ButtonPage path='/blog'>
                     wszystkie posty
                 </ButtonPage>
             </div>
