@@ -1,10 +1,11 @@
 import React from 'react';
 import offer from '../../../data/offer';
+import OfferWrapper from '../../../styles/Containers/OfferWrapper';
 import OfferItem from '../../atoms/OfferPage/OfferItem';
 
 const Offer = () => {
     return(
-        <div>
+        <OfferWrapper>
             {offer.offerItem.map( i => 
                 <OfferItem
                     content={i.content}
@@ -15,7 +16,7 @@ const Offer = () => {
                     title={i.title}
                 />    
             )}
-        </div>
+        </OfferWrapper>
     )
 }
 

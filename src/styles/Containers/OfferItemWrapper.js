@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const OfferItemWrapper = styled.div`
     background-color:${({theme}) => theme.colors.page.card};
-    margin:20rem auto;
+    margin:2rem;
     padding-bottom:1.5rem;
     width:35rem;
 
