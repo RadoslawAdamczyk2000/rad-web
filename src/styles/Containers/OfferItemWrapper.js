@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const OfferItemWrapper = styled.div`
     background-color:${({theme}) => theme.colors.page.card};
     margin:2rem;
-    padding-bottom:1.5rem;
+    padding-bottom:.75rem;
     width:35rem;
 
     & > .poster{
@@ -45,7 +45,7 @@ const OfferItemWrapper = styled.div`
 
         & > .content__price{
             color:${({theme}) => theme.colors.page.title};
-            margin:1.5rem auto;
+            margin:.5rem auto;
         }
 
     }
@@ -54,7 +54,7 @@ const OfferItemWrapper = styled.div`
         align-items:center;
         display:flex;
         justify-content:center;
-        margin:2.5rem 0;
+        margin:.5rem 0;
     }
 
 `

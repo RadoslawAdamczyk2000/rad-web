@@ -5,11 +5,16 @@ import Text from '../../styles/Text/Text';
 import TitlePage from '../../styles/Titles/TitlePage';
 import Offer from '../../components/molecule/OfferPage/Offer';
 import Glossary from '../../components/molecule/OfferPage/Glossary';
+import OfferMenu from '../../styles/Containers/OfferMenu';
 
 const OfferPage = () => {
     return(
         <Layout>
-            <div>
+            <div
+                style={{
+                    margin:'5rem 0'
+                }}
+            >
                 <TitlePage>
                     Oferta
                 </TitlePage>
@@ -17,11 +22,11 @@ const OfferPage = () => {
                     Zapraszam do skorzystania z bogatej oferty, gdzie z pewnością znajdziesz coś dla siebie. Wśród proponowanych usług znajdziesz między innymi tworzenie stron internetowych napisanych w technologiach takich jak Gatsby.js, który od kilku lat śmiało wkracza na światową scenę, oraz WordPress, który swoją popularnością zjednał wielu użytkowników. Oferuję również pozycjonowanie serwisów w wyszukiwarce Google z użyciem topowych narzędzi, w tym kampanie mailingowe, a także Google Ads oraz bezpłatną podstawową analizę witryn internetowych pod kątem SEO.
                 </Text>
             </div>
-            <div>
+            <OfferMenu>
                 <ButtonLink>www</ButtonLink>
                 <ButtonLink>seo</ButtonLink>
                 <ButtonLink>analityka</ButtonLink>
-            </div>
+            </OfferMenu>
             <Offer/>
             <Glossary/>
         </Layout>
