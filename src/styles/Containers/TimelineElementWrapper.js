@@ -9,7 +9,7 @@ const TimelineElementWrapper = styled.div`
     margin:2rem auto;
     max-width:95%;
     min-height:15rem;
-    width:35rem;
+    width:50rem;
 
     & > .head{
         align-items:center;

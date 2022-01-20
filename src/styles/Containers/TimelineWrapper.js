@@ -6,7 +6,7 @@ const TimelineWrapper = styled.div`
     grid-row-gap:2rem;
     margin:2rem auto;
     padding:.25rem;
-    width:75%;
+    width:80%;
 
     & > span{
         display:block;
@@ -29,7 +29,7 @@ const TimelineWrapper = styled.div`
     }
 
 
-    @media only screen and (max-width:950px){
+    @media only screen and (max-width:1000px){
         grid-template-columns:repeat(1,1fr);
         width:85%;
     
