@@ -1,29 +1,30 @@
 import React from 'react';
 import ButtonLink from '../../../styles/Buttons/ButtonLink';
+import OfferItemWrapper from '../../../styles/Containers/OfferItemWrapper';
 
 const OfferItem = ({content, path, poster, price, title}) => {
     return(
-        <div>
-            <figure>
+        <OfferItemWrapper>
+            <figure className='poster'>
                 <img src={poster}/>
             </figure>
-            <div>
-                <h3>
+            <div className='content'>
+                <h3 className='content__title'>
                     {title}
                 </h3>
-                <p>
+                <p className='content__text'>
                     {content}
                 </p>
-                <b>
-                    {price}
+                <b className='content__price'>
+                    {price + ' PLN'}
                 </b>
             </div>
-            <div>
+            <div className='button'>
                 <ButtonLink path={path}>
                     więcej
                 </ButtonLink>
             </div>
-        </div>
+        </OfferItemWrapper>
     )
 }
 
