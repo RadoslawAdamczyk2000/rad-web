@@ -23,9 +23,15 @@ const OfferPage = () => {
                 </Text>
             </div>
             <OfferMenu>
-                <ButtonLink>www</ButtonLink>
-                <ButtonLink>seo</ButtonLink>
-                <ButtonLink>analityka</ButtonLink>
+                <ButtonLink path='/offer/www'>
+                    www
+                </ButtonLink>
+                <ButtonLink path='/offer/seo'>
+                    seo
+                </ButtonLink>
+                <ButtonLink path='/offer/analytics'>
+                    analityka
+                </ButtonLink>
             </OfferMenu>
             <Offer/>
             <Glossary/>
