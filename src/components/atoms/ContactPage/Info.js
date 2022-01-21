@@ -1,12 +1,13 @@
 import React from 'react';
 import {RiPhoneLine} from 'react-icons/ri';
 import {VscMailRead} from 'react-icons/vsc';
+import InfoContactWrapper from '../../../styles/Containers/InfoContactWrapper';
 
 const Info = () => {
     return(
-        <div>
-            <div>
-                <a href='mailto:radoslaw.adamczyk@gmail.com'>
+        <InfoContactWrapper>
+            <div className='box'>
+                <a href='mailto:radoslaw.adamczyk@gmail.com' className='item'>
                     <span>
                         <VscMailRead/>
                     </span>            
@@ -14,7 +15,7 @@ const Info = () => {
                         radoslaw.adamczyk2000@gmail.com
                     </span>            
                 </a>
-                <a href='tel:+48794100413'>
+                <a href='tel:+48794100413' className='item'>
                     <span>
                         <RiPhoneLine/>
                     </span>            
@@ -23,7 +24,7 @@ const Info = () => {
                     </span>            
                 </a>
             </div>
-        </div>
+        </InfoContactWrapper>
     )
 }
 

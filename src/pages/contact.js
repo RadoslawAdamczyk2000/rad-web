@@ -26,15 +26,13 @@ const ContactPage = () => {
                 </Text>
             </div>
             <ContactWrapper>
-
-                <div>
+                <div className='item'>
                     <Info/>
                 </div>
-                <div>   
+                <div className='item'>   
                     <Map/>                    
                 </div>
-
-                <div>
+                <div className='item'>
                     <Form/>
                 </div>
             </ContactWrapper>
