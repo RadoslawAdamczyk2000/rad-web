@@ -34,7 +34,7 @@ const navigation = {
             {
                 icon:<RiFacebookFill/>,
                 name:'Facebook',
-                path:'https://www.facebook.com/Rados%C5%82aw-Adamczyk-Programowanie-101578908834337'
+                path:'https://www.facebook.com/RadWeb-Programowanie-i-SEO-103383665586914'
             },
             {
                 icon:<RiInstagramLine/>,

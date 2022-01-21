@@ -17,7 +17,7 @@ const Wrapper = styled.div`
         color:${({theme}) => theme.colors.page.buttons};
         font-family:${({theme}) => theme.fonts.family.secondary};
         font-size:1.65rem;
-        margin:.75rem 0;
+        margin:.75rem auto;
         padding:.5rem 1rem;
         transition: .12s linear border, .12s linear color;
     }
@@ -28,6 +28,7 @@ const Wrapper = styled.div`
         color:${({theme}) => theme.colors.page.title};
         font-size:1.75rem;
         height:12rem;
+        margin:.85rem auto;
         padding:.45rem;
         transition: .12s linear border-bottom, .12s linear color;
         width:100%;

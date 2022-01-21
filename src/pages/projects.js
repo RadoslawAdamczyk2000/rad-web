@@ -8,7 +8,10 @@ import ProjectsWrapper from '../styles/Containers/ProjectsWrapper';
 
 const ProjectsPage = ({data}) => {
     return(
-        <Layout>
+        <Layout
+            metaDescription='Aplikacja pogodowa, prywatny Netlix oraz strony dla plantatorów i operatorów filmowych - co to wszystko łączy? To są moje projekty oraz efekty współpracy z klientami, którzy mi zaufali.'
+            metaTitle='Projekty aplikacji i stron internetowych, realizacje komercyjne, Śrem, Poznań - RadWEB'
+        >
             <ProjectsWrapper>
                 <div className='content'>
                     <TitlePage>

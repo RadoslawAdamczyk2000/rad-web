@@ -8,14 +8,17 @@ import BlogWrapper from '../styles/Containers/BlogWrapper';
 
 const BlogPage = ({data}) => {
     return(
-        <Layout>
+        <Layout
+            metaDescription='Szukasz ciekawostek o szeroko rozumianym internecie, programowaniu? A może szukasz ciekawostek historycznych lub o tym co się dzieje w moim życiu? W odpowiedzi na te pytania zapraszam do śledzenia bloga.'
+            metaTitle='Blog o programowaniu, pozycjonowaniu, historii, stylu życia, Śrem, Poznań - RadWEB'
+        >
             <BlogWrapper>
                 <div className='content'>
                     <TitlePage>
                         Blog
                     </TitlePage>
                     <Text>
-                        Distinctio inventore est. Dignissimos aliquam debitis nihil at quasi optio dolores. Quisquam corporis quia neque sit vel dolorum optio. Ad enim dolor deleniti ullam quaerat necessitatibus ipsa exercitationem aliquam. Et consequuntur totam dolorem. Repudiandae nam repellendus iusto doloremque blanditiis rerum voluptatum ducimus sint.Veniam minima non et perferendis quia ad distinctio perferendis. Ratione eaque sit non. Est consequuntur voluptates eos cum. Quas necessitatibus odio asperiores. Cupiditate in ut in ducimus placeat voluptates expedita dicta omnis. Quo commodi corrupti consequatur. Officiis repudiandae esse est reiciendis adipisci.
+                        HiT - historia i teraźniejszość - to idealna kwintensencja mojego osobistego blogu. Z tego segmentu serwisu poznasz głębiej tajniki stron internetowych oraz pozycjonowania. Ponadto dowiesz się tutaj wiele o historii, w szczególności o przeszłości Polski, o ważnych personach. A propo historii, możesz się w tym miejscu zaznajomić z moim ciągle rozwijającym się życiorysem. Jeśli Ciebie zaciekawiłem to nic innego mi nie zostaje jak zaprosić do lektury co do raz bardziej rozszerzanej biblioteki arytkułów. 
                     </Text>
                 </div>
                 <div className='cards'>
