@@ -8,7 +8,10 @@ import Form from '../../components/atoms/OfferPage/Form';
 
 const OfferWwwPage = () => {
     return(
-        <Layout>
+        <Layout
+            metaTitle='Tworzenie tanich stron internetowych i projektowanie serwisów, Śrem, Poznań - RadWEB'
+            metaDescription='Posiadanie własnej strony internetowej to warunek sukcesu. Strona powinna być intuicyjna oraz niebanalna - właśnie takie witryny oferuję. Zapraszam !'
+        >
             <div
                 style={{
                     margin:'5rem 0'

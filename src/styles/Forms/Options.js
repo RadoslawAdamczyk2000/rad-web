@@ -70,6 +70,7 @@ const Options = ({isWebsite, isSeo, isAnalytics}) => {
                 {
                     isWebsite &&
                     <>
+                        <option value=''></option>
                         <option value='www mini'>WWW mini</option>
                         <option value='www standard'>WWW standard</option>
                         <option value='www pro'>WWW pro</option>
@@ -78,6 +79,7 @@ const Options = ({isWebsite, isSeo, isAnalytics}) => {
                 {
                     isSeo &&
                     <>
+                        <option value=''></option>
                         <option value='seo mini'>SEO mini</option>
                         <option value='seo standard'>SEO standard</option>
                         <option value='sem'>SEM</option>
@@ -85,7 +87,10 @@ const Options = ({isWebsite, isSeo, isAnalytics}) => {
                 }
                 {
                     isAnalytics &&
-                    <option value='analityka'>Analityka</option>
+                    <>
+                        <option value=''></option>
+                        <option value='analityka' name='analityka'>Analityka</option>
+                    </>
                 }
             </select>
         </Wrapper>

@@ -11,7 +11,7 @@ const HomePage = ({data}) => {
   return(
       <Layout
         metaDescription='Zapraszam do skorzystania z moich usług z zakresu tworzenia stron internetowych oraz kompleksowego pozycjonowania serwisów w wyszukiwarce Google.'
-        metaTitle='Tworzenie stron internetowych, seo i analityka stron, Śrem, Kościan, Poznań - RadWEB'
+        metaTitle='Tworzenie stron internetowych, seo i darmowa analityka stron www, Śrem, Poznań - RadWEB'
       >
           <Hero/>
           <Blog data={data}/>

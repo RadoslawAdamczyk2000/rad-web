@@ -8,17 +8,20 @@ import Form from '../../components/atoms/OfferPage/Form';
 
 const OfferSeoPage = () => {
     return(
-        <Layout>
+        <Layout
+            metaTitle='Oferta pozycjonowania, SEO Google, optymalizacja, treści SEM, Śrem, Poznań - RadWEB'
+            metaDescription='Szukasz fachowca, który wyniesie Twój serwis w wyżyny wyszukiwarki? Korzystając z moich usług masz pewność, że dołożę wszelkie starania o dobrą pozycję Twojego serwisu.'
+        >
             <div
                 style={{
                     margin:'5rem 0'
                 }}
             >
                 <TitlePage>
-                    Oferta WWW
+                    Oferta SEO
                 </TitlePage>
                 <Text>
-                    Jak cię widzą tak cię piszą. Strona internetowa jest Twoją wizytówką w sieci, dlatego należy zadbać o jej właściwą prezencję i funkcjonalności. Jak wygląda proces tworzenia strony? W pierwszej kolejności uzupełnij poniższy formluarz, w którym opiszesz jakie masz plany na swój serwis. W dalszym etapie skontaktuję się z Tobą telefonicznie, oraz w wiadomości mailowej otrzymasz projekt wizualny. Po zrealizowaniu powyższych etapów po akceptacji, piszę stronę. Po napisaniu serwisu otrzmyasz tymczasowy link do strony, w którym sprawdzisz jak się prezentuje strona. Po całkowitym zaakceptowaniu prac, przelewasz wcześniej ustaloną kwotę i wtedy kod źródłowy wrzucam na Twój serwer i Twoją domenę. Jeśli posiadasz jeszcze jakieś pytania to zapraszam do kontaktu.
+                    Masz już swój wizerunek w sieci, jednakże to nie satysfakcjonuje Ciebie widoczność w internecie? Remedium na to jest prowadzenie działań pozycjonerskich. Jakie ja oferuję działania w tej strefie? W pakietach SEO polega to na napisaniu oraz w wdrożeniu tzw. <b>"sekcji head"</b>, czyli segmentu ważnego dla wyszukiwarek oraz odpowiednie poprowadzenie tytułów w serwisie. W dalszych etapach oferuję zainstalowanie narzędzi Google - GoogleSearchConsole, GoogleTagManager oraz GoogleAnalytics, które wspomogą dalsze prace SEO oraz dostosowanie całokształtu serwisu pod najpopularniejszą wyszukiwarkę w Polsce i na świecie. Powyższe prace nie działają <i>ad hoc</i>, i na zaakceptowanie przez Google zmian należy poczekać nie raz z kilka tygodni. Ponadto, jeśli to konieczne napiszę odpowiednie przekierowania, w celu zabezpieczenia użytkownika przed niechcianymi treściami. Ostatni pakiet, czyli SEM to nic innego jak tworzenie treści pod wyszukiwarkę wraz z zaimplementowaniem odpowiednich słów kluczowych - serce prac pozycjonerskich.
                 </Text>
             </div>
             <OfferMenu>

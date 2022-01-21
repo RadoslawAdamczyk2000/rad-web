@@ -16,6 +16,7 @@ const Wrapper = styled.button`
     transition: .12s linear filter;
     width:15rem;
 
+    &:focus,
     &:hover{
         filter:brightness(115%);
     }
@@ -41,10 +42,12 @@ const Wrapper = styled.button`
         width:3.5rem;
         /* width:0rem; */
     }
+    &:focus > span:nth-of-type(1),
     &:hover > span:nth-of-type(1){
         width:calc(15rem - 3.5rem);
     }
 
+    &:focus > span:nth-of-type(2),
     &:hover > span:nth-of-type(2){
         width:3.5rem;
     }

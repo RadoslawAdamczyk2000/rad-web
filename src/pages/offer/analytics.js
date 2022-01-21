@@ -8,17 +8,20 @@ import Form from '../../components/atoms/OfferPage/Form';
 
 const OfferAnalyticsPage = () => {
     return(
-        <Layout>
+        <Layout
+            metaDescription='Po co wydawać pieniądze za coś co jest za darmo? Moja analityka stron oparta jest o topowe narzędzia, które dadzą kierunek pracom seo.'
+            metaTitle='Bezpłatna analiza stron i serwisów internetowych, raporty seo, Śrem, Poznań - RadWEB'
+        >
             <div
                 style={{
                     margin:'5rem 0'
                 }}
             >
                 <TitlePage>
-                    Oferta WWW
+                    Oferta Analiz
                 </TitlePage>
                 <Text>
-                    Jak cię widzą tak cię piszą. Strona internetowa jest Twoją wizytówką w sieci, dlatego należy zadbać o jej właściwą prezencję i funkcjonalności. Jak wygląda proces tworzenia strony? W pierwszej kolejności uzupełnij poniższy formluarz, w którym opiszesz jakie masz plany na swój serwis. W dalszym etapie skontaktuję się z Tobą telefonicznie, oraz w wiadomości mailowej otrzymasz projekt wizualny. Po zrealizowaniu powyższych etapów po akceptacji, piszę stronę. Po napisaniu serwisu otrzmyasz tymczasowy link do strony, w którym sprawdzisz jak się prezentuje strona. Po całkowitym zaakceptowaniu prac, przelewasz wcześniej ustaloną kwotę i wtedy kod źródłowy wrzucam na Twój serwer i Twoją domenę. Jeśli posiadasz jeszcze jakieś pytania to zapraszam do kontaktu.
+                    Masz już seris, ale nie wiesz jakie podjąć dalsze działania? W tym wyręczy Ciebie bezpłatna analiza, która wskaże na jakich frazach powinieneś się skupić oraz jak powinny wyglądać najbliższe prace. Wyniki takich badań dostaniesz ode mnie w formie raportu wysłanego na podany poniżej Twój adres e-mail. 
                 </Text>
             </div>
             <OfferMenu>
