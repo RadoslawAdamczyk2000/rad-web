@@ -28,15 +28,21 @@ const Global = createGlobalStyle`
     }
 
     button{
-        background:none;
-        border:none;
         cursor:pointer;
-        outline:none;
     }
 
     html{
         font-family:${({theme}) => theme.fonts.family.primary};
         font-size:62.5%;
+    }
+
+    button,
+    input,
+    textarea{
+        background:none;
+        border:none;
+        font-family:${({theme}) => theme.fonts.family.primary};
+        outline:none;
     }
 
     li,
