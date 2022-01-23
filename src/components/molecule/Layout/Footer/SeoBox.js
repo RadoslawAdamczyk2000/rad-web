@@ -79,7 +79,7 @@ const SeoBox = () => {
         <SeoBoxWrapper>
             <ul>
                 {
-                    seoItems.menu.map( i => <li style={{color:'#f00'}}><Link to={i.path}>{i.name}</Link></li>)
+                    seoItems.menu.map( i => <li style={{color:'#f00',fontWeight:700}}><Link to={i.path}>{i.name}</Link></li>)
                 }
             </ul>
             <ul>

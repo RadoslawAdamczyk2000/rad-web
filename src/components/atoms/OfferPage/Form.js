@@ -12,7 +12,9 @@ const Form = ({isAnalytics, isSeo, isWebsite}) => {
         <>
             {
                 isAnalytics &&
-                <FormWrapper>
+                <FormWrapper action="https://formsubmit.co/radoslaw.adamczyk2000@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Formularz ofertowy analityk"/>
+                    <input type="hidden" name="_next" rek='redirect' value="https://rad-web.vercel.app/offer/analytics"/>
                     <div>
                         <InputGroup>
                             <Input type='text' placeholder='imię' name='firstname' title='Imię'/>
@@ -27,13 +29,16 @@ const Form = ({isAnalytics, isSeo, isWebsite}) => {
                             <Options isAnalytics/>
                         </InputGroup>
                         <TextArea placeholder='wiadomość' name='message' title='Wiadomość'/>
+                        <input type="hidden" name="_template" value="table"/>
                     </div>
                     <Submit/>
                 </FormWrapper>
             }
             {
                 isSeo &&
-                <FormWrapper>
+                <FormWrapper action="https://formsubmit.co/radoslaw.adamczyk2000@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Formularz ofertowy seo"/>
+                    <input type="hidden" name="_next" rek='redirect' value="https://rad-web.vercel.app/offer/seo"/>
                     <div>
                     <InputGroup>
                             <Input type='text' placeholder='imię' name='firstname' title='Imię'/>
@@ -48,13 +53,16 @@ const Form = ({isAnalytics, isSeo, isWebsite}) => {
                             <Options isSeo/>
                         </InputGroup>
                         <TextArea placeholder='wiadomość' name='message' title='Wiadomość'/>
+                        <input type="hidden" name="_template" value="table"/>
                     </div>
                     <Submit/>
                 </FormWrapper>
             }
             {
                 isWebsite &&
-                <FormWrapper>
+                <FormWrapper action="https://formsubmit.co/radoslaw.adamczyk2000@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Formularz ofertowy www"/>
+                    <input type="hidden" name="_next" rek='redirect' value="https://rad-web.vercel.app/offer/www"/>
                     <div>
                         <InputGroup>
                             <Input type='text' placeholder='imię' name='firstname' title='Imię'/>
@@ -69,6 +77,7 @@ const Form = ({isAnalytics, isSeo, isWebsite}) => {
                             <Options isWebsite/>
                         </InputGroup>
                         <TextArea placeholder='wiadomość' name='message' title='Wiadomość'/>
+                        <input type="hidden" name="_template" value="table"/>
                     </div>
                     <Submit/>
                 </FormWrapper>
