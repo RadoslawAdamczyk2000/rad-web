@@ -31,6 +31,11 @@ const Global = createGlobalStyle`
         cursor:pointer;
     }
 
+    iframe{
+        border:none;
+        outline:none;
+    }
+
     html{
         font-family:${({theme}) => theme.fonts.family.primary};
         font-size:62.5%;

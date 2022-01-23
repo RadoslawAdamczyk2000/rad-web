@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import Head from '../components/atoms/Layout/Head';
+import Footer from '../components/organism/Layout/Footer';
 import Navigation from '../components/organism/Layout/Navigation';
 import Wrapper from '../styles/Containers/Wrapper';
 import Global from '../styles/Global';
@@ -20,6 +21,7 @@ const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, ca
             <Wrapper isArticle={isArticle}>
                 {children}
             </Wrapper>
+            <Footer isArticle={isArticle}/>
         </ThemeProvider>
     )
 }
