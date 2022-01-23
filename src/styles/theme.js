@@ -41,7 +41,7 @@ const theme = {
                     mobile:'2.6rem',
                     tablet:'3.52rem'
                 },
-                subTitle:'2rem'
+                subTitle:'2.8rem'
             },
             page:{
                 button:'1.4rem',

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Wrapper = styled.p`
     color:${({isArticle, theme}) => isArticle ? theme.colors.article.text : theme.colors.page.subTitle};
@@ -19,6 +19,11 @@ const Wrapper = styled.p`
     & > i{
         font-style:italic;
     }
+
+    ${({isArticle}) => isArticle && css`
+        margin:2rem 0;
+        text-align:justify;
+    `}
 `
 
 const Text = ({children, content, isArticle, isCenter}) => {

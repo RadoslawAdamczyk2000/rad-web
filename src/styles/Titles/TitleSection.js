@@ -12,16 +12,17 @@ const Wrapper = styled.h2`
         color:${({theme}) => theme.colors.article.subTitle};
         font-size:${({theme}) => theme.fonts.size.article.subTitle};
         font-weight:${({theme}) => theme.fonts.weight.article.subTitle};
+        margin:5rem 0;
     
     `}
 `
 
-const TitleSection = ({children, isArticle, isCenter, isHeading}) => {
+const TitleSection = ({children, content, isArticle, isCenter, isHeading}) => {
     return(
         <>
             {
                 isArticle ?
-                <Wrapper isArticle isCenter={isCenter} isHeading={isHeading}>
+                <Wrapper isArticle isCenter={isCenter} isHeading={isHeading} dangerouslySetInnerHTML={{__html:content}}>
                     {children}
                 </Wrapper> :
                 <Wrapper isCenter={isCenter} isHeading={isHeading}>
