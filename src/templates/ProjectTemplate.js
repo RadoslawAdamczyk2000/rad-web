@@ -7,6 +7,7 @@ import TextExcerptArticle from '../styles/Text/TextExcerptArticle';
 import ArticlePoster from '../styles/Image/ArticlePoster';
 import ButtonReturn from '../styles/Buttons/ReturnButtonWrapper';
 import Text from '../styles/Text/Text';
+import ButtonProject from '../styles/Buttons/ButtonProject';
 
 const ProjectTemplate = ({data}) => {
 
@@ -20,25 +21,15 @@ const ProjectTemplate = ({data}) => {
             metaTitle={data.datoCmsProject.seo.title}
         >   
             <ButtonReturn path='/'/>
-            <TitlePage isArticle>
+            <TitlePage isProject>
                 {data.datoCmsProject.title}
             </TitlePage>
-            <div>
-                <div>
-                </div>
-                <a href={data.datoCmsProject.link} target='_blank' rel='noopener noreferrer nofollow'>
-                    Zobacz
-                </a>
-            </div>
+            <ButtonProject path={data.datoCmsProject.link}/>
             <ArticlePoster image={image}/>
             <TextExcerptArticle dangerouslySetInnerHTML={{__html : excerptValue}}/>
             <br/>
             <br/>
-            <Text>
-                {
-                     contentValue
-                }
-            </Text>
+            <Text content={contentValue} isArticle/>
         </Layout>
     )
 }

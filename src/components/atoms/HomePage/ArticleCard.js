@@ -38,9 +38,7 @@ const ArticleCard = ({excerpt, path, title, type}) => {
                 </Link>
             </div>
             <div className='excerpt'>
-                <p>
-                    {excerpt.substr(0,97) + "..."}
-                </p>
+                <p dangerouslySetInnerHTML={{__html:excerpt.substr(0,97) + "..."}}/>
             </div>
         </ArticleCardWrapper>
     )

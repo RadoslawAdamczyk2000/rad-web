@@ -1,8 +1,47 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import SeoBoxWrapper from '../../../../styles/Containers/SeoBoxWrapper';
 import SeoItem from '../../../atoms/Layout/Footer/SeoItem';
 
 const seoItems = {
+    menu:[
+        {
+            name:'start',
+            path:'/'
+        },
+        {
+            name:'o mnie',
+            path:'/about'
+        },
+        {
+            name:'blog',
+            path:'/blog'
+        },
+        {
+            name:'projekty',
+            path:'/projects'
+        },
+        {
+            name:'oferta',
+            path:'/offer'
+        },
+        {
+            name:'oferta www',
+            path:'/offer/www'
+        },
+        {
+            name:'oferta seo',
+            path:'/offer/seo'
+        },
+        {
+            name:'oferta analityki',
+            path:'/offer/analytics'
+        },
+        {
+            name:'kontakt',
+            path:'/contact'
+        },
+    ],
     web:[
         'Strony internetowe Śrem',
         'Strony internetowe Poznań',
@@ -38,6 +77,11 @@ const seoItems = {
 const SeoBox = () => {
     return(
         <SeoBoxWrapper>
+            <ul>
+                {
+                    seoItems.menu.map( i => <li style={{color:'#f00'}}><Link to={i.path}>{i.name}</Link></li>)
+                }
+            </ul>
             <ul>
                 {
                     seoItems.web.map( i => <SeoItem>{i}</SeoItem>)

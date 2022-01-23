@@ -21,11 +21,17 @@ const Wrapper = styled.p`
     }
 `
 
-const Text = ({children, isArticle, isCenter}) => {
+const Text = ({children, content, isArticle, isCenter}) => {
     return(
-        <Wrapper isArticle={isArticle} isCenter={isCenter}>
-            {children}
-        </Wrapper>
+        <>
+            {
+                isArticle ?
+                <Wrapper isArticle={isArticle} dangerouslySetInnerHTML={{__html:content}}/>:
+                <Wrapper isCenter={isCenter}>
+                    {children}
+                </Wrapper>
+            }
+        </>
     )
 }
 
