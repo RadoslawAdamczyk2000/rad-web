@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const ProjectCard = ({ image, path, tech, title}) => {
     return(
         <ProjectCardWrapper>
-            <img className='poster' src={image}/>
+            <img className='poster' src={image} alt={title}/>
             <div className='content'>
                 <p>
                     {title}

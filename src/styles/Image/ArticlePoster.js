@@ -33,7 +33,7 @@ const Wrapper = styled.div`
 const ArticlePoster = ({image}) => {
     return(
         <Wrapper>
-            <img src={image}/>
+            <img src={image} alt='article poster'/>
         </Wrapper>
     )
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from './Layout';
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {graphql} from 'gatsby';
 import TitlePage from '../styles/Titles/TitlePage';
 import TextExcerptArticle from '../styles/Text/TextExcerptArticle';

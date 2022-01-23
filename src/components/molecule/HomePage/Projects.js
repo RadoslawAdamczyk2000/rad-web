@@ -1,5 +1,4 @@
 import React from 'react';
-import tech from '../../../data/tech';
 import ButtonPage from '../../../styles/Buttons/ButtonPage';
 import ProjectsSectionWrapper from '../../../styles/Containers/ProjectsSectionWrapper';
 import Text from '../../../styles/Text/Text';
@@ -7,8 +6,6 @@ import TitleSection from '../../../styles/Titles/TitleSection';
 import ProjectCard from '../../atoms/HomePage/ProjectCard';
 
 const Projects = ({data}) => {
-  console.log(data.allDatoCmsProject.edges[0].node.title);
-
     return(
         <ProjectsSectionWrapper>
             <div className='content'>

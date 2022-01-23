@@ -6,7 +6,7 @@ const OfferItem = ({content, path, poster, price, title}) => {
     return(
         <OfferItemWrapper>
             <figure className='poster'>
-                <img src={poster}/>
+                <img src={poster} alt={title}/>
             </figure>
             <div className='content'>
                 <h3 className='content__title'>

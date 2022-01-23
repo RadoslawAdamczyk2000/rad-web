@@ -1,6 +1,6 @@
 const React = require('react');
 const {ThemeProvider} = require('styled-components');
-const theme = require('./src/styles/theme');
+const {default: theme} = require('./src/styles/theme');
 
 exports.wrapRootElement = ({element}) => {
     return(
