@@ -1,15 +1,15 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+// import { ThemeProvider } from 'styled-components';
 import Head from '../components/atoms/Layout/Head';
 import Footer from '../components/organism/Layout/Footer';
 import Navigation from '../components/organism/Layout/Navigation';
 import Wrapper from '../styles/Containers/Wrapper';
 import Global from '../styles/Global';
-import theme from '../styles/theme';
+// import theme from '../styles/theme';
 
 const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, canonical})  => {
     return(
-        <ThemeProvider theme={theme}>
+        <>
             <Head
                 canonical={canonical}
                 metaDescription={metaDescription}
@@ -22,7 +22,7 @@ const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, ca
                 {children}
             </Wrapper>
             <Footer isArticle={isArticle}/>
-        </ThemeProvider>
+        </>
     )
 }
 
