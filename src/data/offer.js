@@ -103,7 +103,7 @@ const offer = {
         {
             content:'Pakiet 5000 znaków treści w oparciu o przesłane wyrażenia kluczowe.',
             id:7,
-            path:'/offer/sem',
+            path:'/offer/seo',
             poster:'https://cdn.pixabay.com/photo/2021/09/19/15/26/typewriter-6638277_960_720.jpg',
             price:500,
             tag:['seo'],
