@@ -63,36 +63,46 @@ const Wrapper = styled.div`
 const Options = ({isWebsite, isSeo, isAnalytics}) => {
     return(
         <Wrapper>
-            <label>
-                Pakiet
-            </label>
-            <select>
-                {
-                    isWebsite &&
-                    <>
+            {
+                isWebsite &&
+                <>
+                    <label htmlFor='www'>
+                        Pakiet
+                    </label>
+                    <select id='www'>
                         <option value=''></option>
-                        <option value='www mini'>WWW mini</option>
-                        <option value='www standard'>WWW standard</option>
-                        <option value='www pro'>WWW pro</option>
-                    </>
-                }
-                {
-                    isSeo &&
-                    <>
+                        <option value='www mini' name='www mini'>WWW mini</option>
+                        <option value='www standard' name='www standard'>WWW standard</option>
+                        <option value='www pro' name='www pro'>WWW pro</option>
+                    </select>
+                </>
+            }
+            {
+                isSeo &&
+                <>
+                    <label htmlFor='seo'>
+                        Pakiet
+                    </label>
+                    <select id='seo'>
                         <option value=''></option>
-                        <option value='seo mini'>SEO mini</option>
-                        <option value='seo standard'>SEO standard</option>
-                        <option value='sem'>SEM</option>
-                    </>
-                }
-                {
-                    isAnalytics &&
-                    <>
+                        <option value='seo mini' name='seo mini'>SEO mini</option>
+                        <option value='seo standard' name='seo standard'>SEO standard</option>
+                        <option value='sem' name='sem'>SEM</option>
+                    </select>
+                </>
+            }
+            {
+                isAnalytics &&
+                <>
+                    <label htmlFor='analytics'>
+                        Pakiet
+                    </label>
+                    <select id='analytics'>
                         <option value=''></option>
                         <option value='analityka' name='analityka'>Analityka</option>
-                    </>
-                }
-            </select>
+                    </select>
+                </>
+            }
         </Wrapper>
     )
 }
