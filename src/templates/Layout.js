@@ -4,7 +4,6 @@ import Footer from '../components/organism/Layout/Footer';
 import Navigation from '../components/organism/Layout/Navigation';
 import Wrapper from '../styles/Containers/Wrapper';
 import Global from '../styles/Global';
-
 const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, canonical})  => {
     return(
         <>
@@ -23,5 +22,4 @@ const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, ca
         </>
     )
 }
-
 export default Layout;

@@ -7,13 +7,10 @@ import ArticlePoster from '../styles/Image/ArticlePoster';
 import ButtonReturn from '../styles/Buttons/ReturnButtonWrapper';
 import Text from '../styles/Text/Text';
 import ButtonProject from '../styles/Buttons/ButtonProject';
-
 const ProjectTemplate = ({data}) => {
-
     const contentValue = data.datoCmsProject.content;
     const excerptValue = data.datoCmsProject.excerpt;
     const image = data.datoCmsProject.poster.url;
-
     return(
         <Layout isArticle
             metaDescription={data.datoCmsProject.seo.description}
@@ -32,7 +29,6 @@ const ProjectTemplate = ({data}) => {
         </Layout>
     )
 }
-
 export const getProject = graphql`
     query getProjecty($slug: String) {
     datoCmsProject(slug: {eq: $slug}) {
@@ -52,7 +48,4 @@ export const getProject = graphql`
     }
     }
 `
-
-
-
 export default ProjectTemplate;
