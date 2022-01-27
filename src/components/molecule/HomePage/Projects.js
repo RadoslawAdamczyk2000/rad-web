@@ -13,7 +13,7 @@ const Projects = ({data}) => {
                 Projekty
               </TitleSection>
               <Text isCenter>
-                Minima voluptas debitis reiciendis molestiae et nam iure. Sed tempora et saepe et occaecati aperiam doloremque est temporibus. Accusamus veniam et libero nisi qui. Repellendus quis delectus at excepturi. Ipsam soluta nam deserunt nesciunt voluptatem atque voluptate similique similique. Voluptas veniam qui recusandae aliquid voluptate odit.
+                Moje projekty to kompilacja realizacji komerycjnych oraz własnych stron i aplikacji internetowych. Stack technologiczny, w którym się poruszam to HTML, CSS, frameworki stylowania Bootstrap oraz Tailwind, preprocesor SCSS, JavaScript, TypeScript, biblioteka React, wraz z front-endowymi frameworkami: GatsbyJS oraz VueJS, który co raz bardziej rozszerza się na rynku. W planach mam również napisanie kilka projektów w AngularJS. Posiadam również trochę komercyjnego doświadczenia w technologiach back-endowych, tj. PHP oraz MySQL.
               </Text>
             </div>
             <div className='projects'>

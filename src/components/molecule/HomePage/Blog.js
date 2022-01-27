@@ -6,12 +6,6 @@ import TitleSection from '../../../styles/Titles/TitleSection';
 import ArticleCard from '../../atoms/HomePage/ArticleCard';
 
 const Blog = ({data}) => {
-
-
-// console.log(data.allDatoCmsArticle.edges[0].node.title);
-// console.log(data.allDatoCmsArticle.edges[0].node.slug);
-// console.log(data.allDatoCmsArticle.edges[0].node.excerpt);
-
     return(
         <BlogSectionWrapper>
             <div className='content'>
@@ -19,7 +13,7 @@ const Blog = ({data}) => {
                 Blog
                 </TitleSection>
                 <Text>
-                Minima voluptas debitis reiciendis molestiae et nam iure. Sed tempora et saepe et occaecati aperiam doloremque est temporibus. Accusamus veniam et libero nisi qui. Repellendus quis delectus at excepturi. Ipsam soluta nam deserunt nesciunt voluptatem atque voluptate similique similique. Voluptas veniam qui recusandae aliquid voluptate odit.
+                    Posiadam szeroki wachlarz zainteresowań oraz co raz to bardziej się poszerzający portfel wiedzy. Z tym wszystkim zamierzam się dzielić poprzez właśnie artykuły blogowe, które stanowią zarówno bazę wiedzy z zakresu programowania, pozycjonowania oraz historii. Ponadto znajdziesz tutaj to co się dzieje aktualnie w moim życiu. To też, jeśli zainteresowały te tematy to zapraszam do udanej lektury.
                 </Text>
                 <ButtonPage path='/blog'>
                     wszystkie posty
@@ -35,26 +29,6 @@ const Blog = ({data}) => {
                         />
                     ))
                 }
-                {/* <ArticleCard 
-                type='lifestyle' 
-                title='Jak zostałem pozycjonrem' 
-                excerpt='To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.'
-                />
-                <ArticleCard 
-                type='lifestyle' 
-                title='Jak zostałem pozycjonrem' 
-                excerpt='To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.'
-                />
-                <ArticleCard 
-                type='lifestyle' 
-                title='Jak zostałem pozycjonrem' 
-                excerpt='To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.'
-                />
-                <ArticleCard 
-                type='lifestyle' 
-                title='Jak zostałem pozycjonrem' 
-                excerpt='To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.To jest prosta historia człowieka który został pozycjonrem przez przypadek.'
-                /> */}
             </div>
           </BlogSectionWrapper>
     )
