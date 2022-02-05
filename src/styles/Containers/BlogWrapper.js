@@ -21,7 +21,7 @@ const BlogWrapper = styled.div`
 
         @media only screen{
             /* @media (max-width) */
-            @media (max-width:1400px){
+            @media (max-width:1500px){
                 grid-template-columns:repeat(3,1fr);
             }
             @media (max-width:1200px){
