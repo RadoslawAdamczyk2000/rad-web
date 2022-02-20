@@ -26,7 +26,7 @@ const Baner = () => {
                 </div>
                 <div className='head__image'>
                     <StaticImage    
-                        src='https://scontent-frt3-2.xx.fbcdn.net/v/t1.6435-9/198036733_101579698834258_8949335479155007453_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_ohc=W9t557zSc4IAX8KhjbF&_nc_ht=scontent-frt3-2.xx&oh=00_AT8Ln3tqCD8QEAOD2KqFMDB10QdjGY6RLzPDWGTnvCy9Kw&oe=620E4E04' 
+                        src='https://scontent-frx5-1.xx.fbcdn.net/v/t39.30808-6/270036280_260706896160356_6959786809740748845_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=gUfDc0uTZx8AX8iXBu6&_nc_ht=scontent-frx5-1.xx&oh=00_AT9VtISXw7u_UzNzpFmqknLR_6b26_mgfQO_31Z5ta-b0A&oe=62189BFE' 
                         layout='constrained'
                         placeholder='tracedSVG'
                         style={{
