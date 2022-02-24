@@ -1,9 +1,12 @@
 import React from 'react';
-import HobbyItemWrapper from '../../../styles/Containers/HobbyItemWrapper';
-
-const HobbyItem = ({icon, title}) => {
+import { motion } from 'framer-motion';
+interface IhobbyItem {
+    icon : any,
+    title : string
+}
+const HobbyItem = ({icon, title}:IhobbyItem) => {
     return(
-        <HobbyItemWrapper
+        <motion.div
             whileHover={{
                 boxShadow:'0 0 1rem hsla(0,100%,100%,.5)',
                 scale:1.05
@@ -15,7 +18,7 @@ const HobbyItem = ({icon, title}) => {
             <p>
                 {title}
             </p>
-        </HobbyItemWrapper>
+        </motion.div>
     )
 }
 

@@ -14,6 +14,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@types/react-icons": "^3.0.0",
+    "@types/styled-components": "^5.1.23",
     "axios": "^0.25.0",
     "babel-plugin-styled-components": "^2.0.2",
     "chart.js": "^3.6.0",

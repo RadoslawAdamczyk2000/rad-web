@@ -1,9 +1,7 @@
 import React from 'react';
-import TimelineElementWrapper from '../../../styles/Containers/TimelineElementWrapper';
-
 const TimelineItem = ({color, content, date, icon, title}) => {
     return(
-        <TimelineElementWrapper color={color}>
+        <div color={color}>
             <div className='head'>
                 <span className='head__date'>
                     {date}
@@ -20,8 +18,7 @@ const TimelineItem = ({color, content, date, icon, title}) => {
                     {content}
                 </p>
             </div>
-        </TimelineElementWrapper>
+        </div>
     )
 }
-
 export default TimelineItem;
