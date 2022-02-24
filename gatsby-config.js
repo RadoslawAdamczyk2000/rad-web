@@ -38,5 +38,12 @@ module.exports = {
           apiToken: `ed1726e97d820bd336169cf7ac7ddb`,
         },
       },
+      {
+        resolve: "gatsby-plugin-google-tagmanager",
+        options: {
+          id: "GTM-MPGDKSZ",
+          includeInDevelopment: false
+        },
+      },
     ]
 }

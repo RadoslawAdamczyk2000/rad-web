@@ -15,13 +15,7 @@ const Head = ({metaDescription, metaRobots, metaTitle, canonical}) => {
             {metaRobots && <meta name='robots' content={metaRobots}/>}
             {canonical && <link rel='canonical' href={canonical}/>}         
             <link rel="icon" href="https://scontent-frx5-1.xx.fbcdn.net/v/t39.30808-6/272283819_103383992253548_4323845245526580592_n.png?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=R8zgmNYicMsAX9x9jjF&_nc_ht=scontent-frx5-1.xx&oh=00_AT-yWJoi54f5vxzQZLBpBV-KG7hxuFV1bQyTcQvVaXzT-A&oe=61F1C133"/>
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GQTSZJDV6"/>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments)}
-                gtag('js', new Date())
-                gtag('config', 'G-8GQTSZJDV6');
-            </script>
+            
         </Helmet>
     )
 }
