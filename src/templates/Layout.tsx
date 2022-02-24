@@ -4,7 +4,15 @@ import Footer from '../components/organism/Layout/Footer';
 import Navigation from '../components/organism/Layout/Navigation';
 import Wrapper from '../styles/Containers/Wrapper';
 import Global from '../styles/Global';
-const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, canonical})  => {
+interface Ilayout {
+    children : any,
+    isArticle ?: boolean,
+    metaDescription : string,
+    metaRobots ?: string,
+    metaTitle : string,
+    canonical ?: string
+}
+const Layout = ({children, isArticle=false, metaDescription, metaRobots, metaTitle, canonical}:Ilayout)  => {
     return(
         <>
             <Head
@@ -14,7 +22,7 @@ const Layout = ({children, isArticle, metaDescription, metaRobots, metaTitle, ca
                 metaTitle={metaTitle}
             />
             <Global isArticle={isArticle}/>
-            {isArticle ?? <Navigation/>}
+            <Navigation/>
             <Wrapper isArticle={isArticle}>
                 {children}
             </Wrapper>

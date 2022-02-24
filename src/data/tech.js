@@ -30,7 +30,7 @@ import {
         SiSvelte
     } from 'react-icons/si';
 
-const tech = {
+export const tech = {
     html:<SiHtml5/>,
     css:<SiCss3/>,
     bootstrap:<SiBootstrap/>,
@@ -60,5 +60,3 @@ const tech = {
     swift:<SiSwift/>,
     svelte:<SiSvelte/>
 }
-
-export default tech;
