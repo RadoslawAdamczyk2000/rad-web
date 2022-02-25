@@ -1,8 +1,21 @@
-import React from 'react';
 import ArticleCard from '../../atom/BlogPage/ArticleCard';
+import ArticlesWrapper from './styles/ArticlesWrapper';
+import React from 'react';
 const Articles = () => {
     return(
-        <div>
+        <ArticlesWrapper>
+            <ArticleCard
+                articleType='history'
+                excerpt='Dbanie o swój wizerunek w sieci jest podstawą do budowania swojej marki. Z racji tego, że chcę si...'
+                path='#'
+                title='Efekty pozycjonowania portfolio 20.02.2022'
+            />
+            <ArticleCard
+                articleType='history'
+                excerpt='Dbanie o swój wizerunek w sieci jest podstawą do budowania swojej marki. Z racji tego, że chcę si...'
+                path='#'
+                title='Efekty pozycjonowania portfolio 20.02.2022'
+            />
             <ArticleCard
                 articleType='history'
                 excerpt='Dbanie o swój wizerunek w sieci jest podstawą do budowania swojej marki. Z racji tego, że chcę si...'
@@ -21,7 +34,7 @@ const Articles = () => {
                 path='#'
                 title='Efekty pozycjonowania portfolio 20.02.2022'
             />
-        </div>
+        </ArticlesWrapper>
     )
 }
 export default Articles;

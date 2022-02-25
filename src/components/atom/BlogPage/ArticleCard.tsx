@@ -3,6 +3,7 @@ import {AiOutlineGoogle,AiOutlineCrown} from 'react-icons/ai';
 import {Link} from 'gatsby';
 import {RiHeart3Line} from 'react-icons/ri';
 import {VscBook, VscLinkExternal,VscCode} from 'react-icons/vsc';
+import ArticleCardWrapper from './styles/ArticleCardWrapper';
 interface IarticleCard {
     articleType : string,
     excerpt : string,
@@ -24,8 +25,8 @@ const ArticleCard = ({articleType,excerpt,path,title}:IarticleCard) => {
         }
     }
     return(
-        <article>
-            <div>
+        <ArticleCardWrapper>
+            <div className='head'>
                 <span>
                     {variant()}
                 </span>
@@ -33,15 +34,17 @@ const ArticleCard = ({articleType,excerpt,path,title}:IarticleCard) => {
                     <VscLinkExternal/>
                 </Link>
             </div>
-            <div>
-                <p>
-                    {title}
-                </p>
+            <div className='content'>
+                <Link to={path}>
+                    <p>
+                        {title}
+                    </p>
+                </Link>
                 <p>
                     {excerpt}
                 </p>
             </div>
-        </article>
+        </ArticleCardWrapper>
     )
 }
 export default ArticleCard;

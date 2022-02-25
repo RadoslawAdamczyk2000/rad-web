@@ -14,7 +14,7 @@ const BlogPage = ({data}) => {
             <BlogWrapper>
                 <div className='content'>
                     <TitlePage
-                        title='Blog o programowaniu, pozycjonowaniu i stronach internetowych'
+                        title='Blog o SEO i WWW'
                     />
                     <Text>
                         HiT - historia i teraźniejszość - to idealna kwintensencja mojego osobistego blogu. Z tego segmentu serwisu poznasz głębiej tajniki stron internetowych oraz pozycjonowania. Ponadto dowiesz się tutaj wiele o historii, w szczególności o przeszłości Polski, o ważnych personach. A propo historii, możesz się w tym miejscu zaznajomić z moim ciągle rozwijającym się życiorysem. Jeśli Ciebie zaciekawiłem to nic innego mi nie zostaje jak zaprosić do lektury co do raz bardziej rozszerzanej biblioteki arytkułów. 

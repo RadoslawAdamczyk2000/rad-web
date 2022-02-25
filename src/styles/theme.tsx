@@ -8,8 +8,8 @@ const theme = {
         },
         page:{
             background:'#040c18',
-            buttons:'#44e3bb',
-            card:'#08162b',
+            buttons:'#23bd96',
+            card:'#323842',
             navigation:{
                 desktop:{
                     color:'#8892b0',
