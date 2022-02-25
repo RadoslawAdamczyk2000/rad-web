@@ -1,4 +1,5 @@
 import React from 'react';
+import FormAreaWrapper from './styles/FormAreaWrapper';
 interface IformArea {
     inputId : string,
     inputName : string,
@@ -6,7 +7,7 @@ interface IformArea {
 }
 const FormArea = ({inputId,inputName,title}:IformArea) => {
     return(
-        <div>
+        <FormAreaWrapper>
             <label htmlFor={inputId}>
                 {title}
             </label>
@@ -14,7 +15,7 @@ const FormArea = ({inputId,inputName,title}:IformArea) => {
                 name={inputName}
                 id={inputId} 
             />
-        </div>
+        </FormAreaWrapper>
     )
 }
 export default FormArea;

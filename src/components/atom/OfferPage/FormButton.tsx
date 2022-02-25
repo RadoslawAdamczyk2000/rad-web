@@ -1,9 +1,10 @@
 import React from 'react';
+import FormButtonWrapper from './styles/FormButtonWrapper';
 const FormButton = () => {
     return(
-        <button>
+        <FormButtonWrapper>
             Wyślij
-        </button>
+        </FormButtonWrapper>
     )
 }
 export default FormButton;

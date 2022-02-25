@@ -1,9 +1,11 @@
 import React from 'react';
 import FormArea from '../../atom/OfferPage/FormArea';
+import FormButton from '../../atom/OfferPage/FormButton';
 import FormInput from '../../atom/OfferPage/FormInput';
+import FormWrapper from './styles/FormWrapper';
 const Form = () => {
     return(
-        <form>
+        <FormWrapper>
             <FormInput
                 inputId='fullname'
                 inputName='fullname'
@@ -33,7 +35,8 @@ const Form = () => {
                 inputName='message'
                 title='Wiadomość'
             />
-        </form>
+            <FormButton/>
+        </FormWrapper>
     )
 }
 export default Form;

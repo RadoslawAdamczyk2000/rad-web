@@ -4,6 +4,7 @@ import TitlePage from '../../components/atom/OfferPage/TitlePage';
 import Text from '../../components/atom/OfferPage/Text';
 import LinkButton from '../../components/atom/OfferPage/LinkButton';
 import Form from '../../components/bacteria/OfferPage/Form';
+import LinkButtonsWrapper from '../../components/bacteria/OfferPage/styles/LinkButtonsWrapper';
 const OfferAnalyticsPage = () => {
     return(
         <Layout
@@ -16,7 +17,7 @@ const OfferAnalyticsPage = () => {
                     Masz już seris, ale nie wiesz jakie podjąć dalsze działania? W tym wyręczy Ciebie bezpłatna analiza, która wskaże na jakich frazach powinieneś się skupić oraz jak powinny wyglądać najbliższe prace. Wyniki takich badań dostaniesz ode mnie w formie raportu wysłanego na podany poniżej Twój adres e-mail. 
                 </Text>
             </div>
-            <ul>
+            <LinkButtonsWrapper>
                 <LinkButton
                     path='#'
                     title='www'
@@ -29,7 +30,7 @@ const OfferAnalyticsPage = () => {
                     path='#'
                     title='analityka'
                 />
-            </ul>
+            </LinkButtonsWrapper>
             <Form/>
             <div>
                 <Text>

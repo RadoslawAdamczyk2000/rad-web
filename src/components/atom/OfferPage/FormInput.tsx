@@ -1,4 +1,5 @@
 import React from 'react';
+import FormInputWrapper from './styles/FormInputWrapper';
 interface IformInput {
     inputId : string,
     inputName : string,
@@ -7,7 +8,7 @@ interface IformInput {
 }
 const FormInput = ({inputId,inputName,inputType='text',title}:IformInput) => {
     return(
-        <div>
+        <FormInputWrapper>
             <label htmlFor={inputId}>
                 {title}
             </label>
@@ -16,7 +17,7 @@ const FormInput = ({inputId,inputName,inputType='text',title}:IformInput) => {
                 name={inputName} 
                 id={inputId} 
             />
-        </div>
+        </FormInputWrapper>
     )
 }
 export default FormInput;

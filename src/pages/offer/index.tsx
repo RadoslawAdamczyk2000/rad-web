@@ -7,6 +7,7 @@ import Text from '../../components/atom/OfferPage/Text';
 import Offers from '../../components/bacteria/OfferPage/Offers';
 import Dictonary from '../../components/bacteria/OfferPage/Dictonary';
 import LinkButton from '../../components/atom/OfferPage/LinkButton';
+import LinkButtonsWrapper from '../../components/bacteria/OfferPage/styles/LinkButtonsWrapper';
 
 const OfferPage = () => {
     return(
@@ -22,20 +23,20 @@ const OfferPage = () => {
                     Zapraszam do skorzystania z bogatej oferty, gdzie z pewnością znajdziesz coś dla siebie. Wśród proponowanych usług znajdziesz między innymi tworzenie stron internetowych napisanych w technologiach takich jak Gatsby.js, który od kilku lat śmiało wkracza na światową scenę, oraz WordPress, który swoją popularnością zjednał wielu użytkowników. Oferuję również pozycjonowanie serwisów w wyszukiwarce Google z użyciem topowych narzędzi, w tym kampanie mailingowe, a także Google Ads oraz bezpłatną podstawową analizę witryn internetowych pod kątem SEO.
                 </Text>
             </div>
-            <ul>
+            <LinkButtonsWrapper>
                 <LinkButton
-                    path='#'
+                    path='/offer/www'
                     title='www'
                 />
                 <LinkButton
-                    path='#'
+                    path='/offer/seo'
                     title='seo'
                 />
                 <LinkButton
-                    path='#'
+                    path='/offer/analytics'
                     title='analityka'
                 />
-            </ul>
+            </LinkButtonsWrapper>
             <Offers/>
             <Dictonary/>
         </Layout>
