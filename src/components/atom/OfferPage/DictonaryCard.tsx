@@ -1,18 +1,19 @@
 import React from 'react';
+import DictonaryCardWrapper from './styles/DictonaryCardWrapper';
 interface IdictonaryCard {
     definition : string,
     title : string
 }
 const DictonaryCard = ({definition,title}:IdictonaryCard) => {
     return(
-        <article>
+        <DictonaryCardWrapper>
             <div>
                 {title}
             </div>
             <div>
                 {definition}
             </div>
-        </article>
+        </DictonaryCardWrapper>
     )
 }
 export default DictonaryCard;

@@ -1,12 +1,13 @@
-import { Link } from 'gatsby';
+import LinkButtonWrapper from './styles/LinkButtonWrapper';
 import React from 'react';
+import { Link } from 'gatsby';
 const LinkButton = ({path,title}:{path:string,title:string}) => {
     return(
-        <li>
+        <LinkButtonWrapper>
             <Link to={path}>
                 {title}
             </Link>
-        </li>
+        </LinkButtonWrapper>
     )
 }
 export default LinkButton;
