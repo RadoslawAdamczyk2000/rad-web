@@ -4,9 +4,10 @@ const FormButtonWrapper = styled.button`
     border:.2rem solid ${({theme}) => theme.colors.page.title};
     color:${({theme}) => theme.colors.page.title};
     display:flex;
+    font-family:${({theme}) => theme.fonts.family.secondary};
     font-size:3rem;
     font-weight:800;
-    height:5rem;
+    height:6rem;
     justify-content:center;
     margin:2rem auto;
     transition:.12s linear border, .12s linear box-shadow, .12s linear color;

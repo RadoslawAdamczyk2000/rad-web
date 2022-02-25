@@ -11,6 +11,7 @@ const FormInputWrapper = styled.div`
     & > label,
     & > input{
         color:${({theme}) => theme.colors.page.subTitle};
+        font-family:${({theme}) => theme.fonts.family.secondary};
         height:3.5rem;
         transition:.12s linear color;
     }
@@ -20,6 +21,7 @@ const FormInputWrapper = styled.div`
         font-size:1.75rem;
         font-weight:600;
         justify-content:center;
+        text-align:center;
         width:15rem;
     }
     & > input{

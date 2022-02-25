@@ -5,6 +5,7 @@ import Text from '../../components/atom/OfferPage/Text';
 import LinkButton from '../../components/atom/OfferPage/LinkButton';
 import Form from '../../components/bacteria/OfferPage/Form';
 import LinkButtonsWrapper from '../../components/bacteria/OfferPage/styles/LinkButtonsWrapper';
+import { cities } from '../../data/cities';
 const OfferAnalyticsPage = () => {
     return(
         <Layout
@@ -19,22 +20,33 @@ const OfferAnalyticsPage = () => {
             </div>
             <LinkButtonsWrapper>
                 <LinkButton
-                    path='#'
+                    path='/offer/www'
                     title='www'
                 />
                 <LinkButton
-                    path='#'
+                    path='/offer/seo'
                     title='seo'
                 />
                 <LinkButton
-                    path='#'
-                    title='analityka'
+                    path='/offer'
+                    title='oferty'
                 />
             </LinkButtonsWrapper>
             <Form/>
             <div>
                 <Text>
                     Masz już seris, ale nie wiesz jakie podjąć dalsze działania? W tym wyręczy Ciebie bezpłatna analiza, która wskaże na jakich frazach powinieneś się skupić oraz jak powinny wyglądać najbliższe prace. Wyniki takich badań dostaniesz ode mnie w formie raportu wysłanego na podany poniżej Twój adres e-mail. 
+                    <ol>
+                        {
+                            cities.map( i => <li>bezpłatna analityka stron internetowych <b>{i}</b></li>)
+                        }
+                        {
+                            cities.map( i => <li>analiza stron internetowych <b>{i}</b></li>)
+                        }
+                        {
+                            cities.map( i => <li>analiza za darmo stron internetowych <b>{i}</b></li>)
+                        }
+                    </ol>
                 </Text>
             </div>
         </Layout>

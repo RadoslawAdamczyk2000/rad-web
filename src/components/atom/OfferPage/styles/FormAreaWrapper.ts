@@ -12,6 +12,7 @@ const FormAreaWrapper = styled.div`
         align-items:center;
         color:${({theme}) => theme.colors.page.subTitle};
         display:flex;
+        font-family:${({theme}) => theme.fonts.family.secondary};
         font-size:1.75rem;
         font-weight:600;
         height:3.5rem;
@@ -22,10 +23,11 @@ const FormAreaWrapper = styled.div`
     & > textarea{
         border:.15rem solid ${({theme}) => theme.colors.page.subTitle};
         color:${({theme}) => theme.colors.page.subTitle};
+        font-family:${({theme}) => theme.fonts.family.secondary};
         font-size:1.65rem;
         font-weight:600;
         height:12rem;
-        padding:0 1rem;
+        padding:1rem;
         text-align:justify;
         transition:.12s linear border-bottom;
         width:40rem;
