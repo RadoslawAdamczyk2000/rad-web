@@ -12,7 +12,6 @@ const AboutPage = () => {
             <Baner/>
             <Timeline/>
             <Technologies/>
-            <Charts/>
             <Hobbies/>
         </Layout>
     )

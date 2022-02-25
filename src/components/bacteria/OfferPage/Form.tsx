@@ -1,4 +1,5 @@
 import React from 'react';
+import FormArea from '../../atom/OfferPage/FormArea';
 import FormInput from '../../atom/OfferPage/FormInput';
 const Form = () => {
     return(
@@ -27,6 +28,12 @@ const Form = () => {
                 title='Budżet'
                 inputType='number'
             />
+            <FormArea
+                inputId='message'
+                inputName='message'
+                title='Wiadomość'
+            />
         </form>
     )
 }
+export default Form;

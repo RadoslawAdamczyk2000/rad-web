@@ -4,7 +4,7 @@ import {BiChurch} from 'react-icons/bi';
 
 const timelineColors = {
     life:'#d62828',
-    school:'#4ecdc4',
+    school:'#00968E',
     work:'#4361ee',
     religion:'#ff6d00'
 }

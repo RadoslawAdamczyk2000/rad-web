@@ -47,7 +47,15 @@ export const charts = {
                 '#F73C00',/*Svelte*/
                 '#0769ad'/*jQuery*/
             ]
-        }]
+        }],
+        options: {
+            legend:{
+                labels:{
+                    fontColor:'#fff',
+                    fontSize:'1.75rem'
+                }
+            }
+        }
     },
     backend:{
         labels:[
@@ -64,7 +72,7 @@ export const charts = {
         datasets:[{
             label:'Back-end stack',
             data:[
-                5,/*PHP*/
+                4.5,/*PHP*/
                 4,/*MySQL*/
                 4,/*PostreSQL*/
                 2,/*MongoDB*/
@@ -85,7 +93,15 @@ export const charts = {
                 '#E03C8B',/*Smarty*/
                 '#99E8F4'/*Liquid*/
             ]
-        }]
+        }],
+        options: {
+            legend:{
+                labels:{
+                    fontColor:'#fff',
+                    fontSize:'1.75rem'
+                }
+            }
+        }
     },
     cms:{
         labels:[
@@ -129,6 +145,14 @@ export const charts = {
                 '#F70000',/*RedCart*/
                 '#D8BF6C'/*ShopGold*/
             ]
-        }]
+        }],
+        options: {
+            legend:{
+                labels:{
+                    fontColor:'#fff',
+                    fontSize:'1.75rem'
+                }
+            }
+        }
     }
 }

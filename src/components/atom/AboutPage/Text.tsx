@@ -1,12 +1,13 @@
 import React from 'react'
+import TextWrapper from './styles/TextWrapper';
 interface Itext {
     children : any
 }
 const Text = ({children}:Itext) => {
     return(
-        <div>
+        <TextWrapper>
             {children}
-        </div>
+        </TextWrapper>
     )
 }
 export default Text;

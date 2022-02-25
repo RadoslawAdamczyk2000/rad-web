@@ -5,14 +5,17 @@ interface Ichart {
     dataChart : Object
 }
 const Chart = ({dataChart}:Ichart) => {
-    ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
+    ChartJS.register(RadialLinearScale, ArcElement, Tooltip);
     return(
-        <PolarArea
-            data={dataChart}
-            style={{
-                width:'100%'
-            }}
-        />
+        <div>
+            <PolarArea
+                data={dataChart}
+                style={{
+                    color:'#fff',
+                    width:'100%'
+                }}
+            />
+        </div>
     )
 }
 export default Chart;

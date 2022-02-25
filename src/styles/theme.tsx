@@ -7,9 +7,9 @@ const theme = {
             text:'#000'
         },
         page:{
-            background:'#0A192F',
+            background:'#040c18',
             buttons:'#44e3bb',
-            card:'#112240',
+            card:'#08162b',
             navigation:{
                 desktop:{
                     color:'#8892b0',
@@ -20,9 +20,9 @@ const theme = {
                     color:'#ccd6f6',
                 }
             },
-            title:'#ccd6f6', 
+            title:'#fafafa', 
             special:'#ffc800',
-            subTitle:'#8892b0'
+            subTitle:'#cccfd8'
         }
     },
     fonts:{
@@ -45,13 +45,13 @@ const theme = {
             },
             page:{
                 button:'1.4rem',
-                content:'2rem',
+                content:'1.85rem',
                 navigation:'1.4rem',
                 title:{
                     desktop:'8rem',
-                    mobile:'4rem'
+                    mobile:'3.45rem'
                 },
-                subTitle:'3.2rem'
+                subTitle:'2.2rem'
             }
         },
         weight:{

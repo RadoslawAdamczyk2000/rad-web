@@ -1,24 +1,25 @@
 import React from 'react';
+import TimelineItemWrapper from './styles/TimelineItemWrapper';
 const TimelineItem = ({color, content, date, icon, title}) => {
     return(
-        <div color={color}>
+        <TimelineItemWrapper color={color}>
             <div className='head'>
-                <span className='head__date'>
+                <span className='date'>
                     {date}
                 </span>
-                <span className='head__icon'>
+                <span className='icon'>
                     {icon}
                 </span>
             </div>
             <div className='content'>
-                <p className='content__title'>
+                <p className='title'>
                     {title}
                 </p>
-                <p className='content__text'>
+                <p className='text'>
                     {content}
                 </p>
             </div>
-        </div>
+        </TimelineItemWrapper>
     )
 }
 export default TimelineItem;
