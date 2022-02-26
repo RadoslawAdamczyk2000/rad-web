@@ -4,7 +4,18 @@ const TextWrapper = styled.div`
     font-size:${({theme}) => theme.fonts.size.page.content};
     padding:1.5rem;
     text-align:justify;
-    & > ol{
+    & > ol {
+        align-items:center;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+        list-style:circle;
+        & > li{
+            list-style:circle;
+        }
+    }
+    & > ul{
         align-items:center;
         display:flex;
         flex-direction:row;

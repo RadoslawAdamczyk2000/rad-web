@@ -40,23 +40,30 @@ const OfferWwwPage = () => {
             <div>  
                 <Text>
                     <p>
-                        Strony przeze mnie napisane są całkowicie spersonalizowane pod klienta z zachowaniem najlepszych technik i wymagań dla wyszukiwarki Google. Piszę strony internetowe oparte o HTML, CSS, preprocesor Sass oraz Scss, JavaScript ES5+, ReactJS, GatsbyJS, NextJS, VueJS, Angular, TypeScript, PHP, MySQL, PostgreSQL, a także MongoDB. To co oferuję w tym zakresie to:
+                        Strony przeze mnie napisane są całkowicie spersonalizowane pod klienta z zachowaniem najlepszych technik i wymagań dla wyszukiwarki Google. Piszę strony internetowe oparte o HTML, CSS, preprocesor Sass oraz Scss, JavaScript ES5+, ReactJS, GatsbyJS, NextJS, VueJS, Angular, TypeScript, PHP, MySQL, PostgreSQL, a także MongoDB. Strony internetowe realizuję w następujących krokach:
                     </p>
                     <br/>
+                    <br/>
                     <ol>
-                        {
-                            cities.map( i => <li>strony internetowe <b>{i}</b></li>)
-                        }
-                        {
-                            cities.map( i => <li>strony www <b>{i}</b></li>)
-                        }
-                        {
-                            cities.map( i => <li>tworzenie stron internetowych <b>{i}</b></li>)
-                        }
-                        {
-                            cities.map( i => <li>pisanie stron www <b>{i}</b></li>)
-                        }
+                        <li><b>1.:</b> Kontakt z klientem, poznanie celów klienta.</li>
+                        <li><b>2.:</b> Zebranie pomysłów na wygląd strony, wraz z prezentacją pomysłów.</li>
+                        <li><b>3.:</b> Dobór technologii.</li>
+                        <li><b>4.:</b> Udostępnienie linku do wersji deweloperskiej strony, umożliwiając bieżące śledzenie rozwoju budowy serwisu.</li>
+                        <li><b>5.:</b> Skonfigurowanie systemu zarządzania treścią.</li>
+                        <li><b>6.:</b> Zakończenie procesu realizacji strony.</li>
+                        <li><b>7.:</b> Zebranie opinii nt. wykonanych prac na stronie od klienta.</li>
+                        <li><b>8.:</b> Po zakończeniu prac instaluję GoogleSearchConsole oraz przeprowadzam serwis przez proces zaindeksowania strony przez Google.</li>
                     </ol>
+                    <br/>
+                    <br/>
+                    <p>
+                        Realizuję róznego rodzaju strony internetowe. Różnego rodzaju, czyli jakie? Strony typu portfolio, gdzie znajduje się krótka prezentacja strony bazująca na około 3 podstronach. Innym jest blog, czyli strona gdzie trzonem jest zamieszczanie postów na stronie - blogi są trzonem jeśli chcesz mieć dobrze wypozycjonowaną stroną. Ostatnim wariantem są strony e-commerce, czyli strony internetowe. One są zazwyczaj oparte na WooComerce, PrestaShop, Shoper oraz Shopify. Moje usługi z zakresu tworzenia stron internetowych, zwanymi równie powszechnie stronami www tworzę na terenie miast takich jak:
+                    </p>
+                    <br/>
+                    <br/>
+                    <ul>
+                        {cities.map(i => <li><b>{i}</b></li>)}
+                    </ul>
                 </Text>
             </div>
         </Layout>
