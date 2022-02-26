@@ -9,8 +9,12 @@ const TextWrapper = styled.div`
         display:flex;
         flex-direction:column;
         flex-wrap:wrap;
+        gap:2rem;
         justify-content:center;
         list-style:circle;
+        margin:2rem auto;
+        text-align:center;
+        width:85%;
         & > li{
             list-style:circle;
         }
