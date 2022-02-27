@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
       title: `RadWEB`,
-        siteUrl: `https://www.yourdomain.tld`,
+        siteUrl: `https://rad-web.vercel.app`,
     },
     plugins: [
       `gatsby-plugin-styled-components`,
@@ -30,6 +30,13 @@ module.exports = {
         options: {
           name: `templates`,
           path: `${__dirname}/src/templates/`,
+        },
+      },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          name: `assets`,
+          path: `${__dirname}/src/assets/`,
         },
       },
       {
