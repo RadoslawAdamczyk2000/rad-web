@@ -1,12 +1,9 @@
 import Layout from '../templates/Layout';
 import React from 'react';
-import TitlePage from '../styles/Titles/TitlePage';
-import Text from '../styles/Text/Text';
-import Form from '../components/atoms/ContactPage/Form';
-import Info from '../components/atoms/ContactPage/Info';
-import Map from '../components/atoms/ContactPage/Map';
-import ContactWrapper from '../styles/Containers/ContactWrapper';
-
+import TitlePage from '../components/atom/ContactPage/TitlePage';
+import Text from '../components/atom/ContactPage/Text';
+import Contact from '../components/molecule/ContactPage/Contact';
+import Form from '../components/bacteria/ContactPage/Form';
 const ContactPage = () => {
     return(
         <Layout
@@ -18,24 +15,15 @@ const ContactPage = () => {
                     margin:'5rem 0'
                 }}
             >
-                <TitlePage>
-                    Kontakt
-                </TitlePage>
+                <TitlePage 
+                    title='Kontakt'
+                />
                 <Text>
                     Jestem osobą, której możesz powierzyć zadanie stworzenia oraz pozycjonowania stron internetowych. Man doświadczenie, z którego wiem, jak powinna wyglądać wzorowa strona zarówno dla użytkownika jak i robotów wyszukiwarek. Moimi znakami rozpoznawczymi są profesjonalizm, uczciwość, empatia oraz solidność.
                 </Text>
             </div>
-            <ContactWrapper>
-                <div className='item'>
-                    <Info/>
-                </div>
-                <div className='item'>   
-                    <Map/>                    
-                </div>
-                <div className='item'>
-                    <Form/>
-                </div>
-            </ContactWrapper>
+            <Contact/>
+            <Form/>
         </Layout>
     )
 }
