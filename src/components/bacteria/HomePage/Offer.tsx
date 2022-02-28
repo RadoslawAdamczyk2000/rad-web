@@ -9,7 +9,7 @@ import OfferWrapper from './styles/OfferWrapper';
 const Offer = () => {
     return(
         <OfferWrapper>
-            <div>
+            <div className='head'>
                 <TitleSection 
                     title='Oferta'
                 />
@@ -17,6 +17,7 @@ const Offer = () => {
                     Zapraszam do skorzystania z bogatej oferty, gdzie z pewnością znajdziesz coś dla siebie. Wśród proponowanych usług znajdziesz między innymi tworzenie stron internetowych napisanych w technologiach takich jak Gatsby.js, który od kilku lat śmiało wkracza na światową scenę, oraz WordPress, który swoją popularnością zjednał wielu użytkowników. Oferuję również pozycjonowanie serwisów w wyszukiwarce Google z użyciem topowych narzędzi, w tym kampanie mailingowe, a także Google Ads oraz bezpłatną podstawową analizę witryn internetowych pod kątem SEO.
                 </Text>
                 <Button
+                    center={true}
                     path='/offer'
                     title='zobacz więcej'
                 />

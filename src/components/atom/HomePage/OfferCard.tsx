@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button';
+import OfferCardWrapper from './styles/OfferCardWrapper';
 interface IofferCard {
     icon : any,
     text : string,
@@ -8,12 +9,12 @@ interface IofferCard {
 }
 const OfferCard = ({icon,text,title,path}:IofferCard) => {
     return(
-        <article>
-            <div>
+        <OfferCardWrapper>
+            <div className='head'>
                 <span>{icon}</span>
                 <h5>{title}</h5>
             </div>
-            <div>
+            <div className='content'>
                 <p>
                     {text}
                 </p>
@@ -24,7 +25,7 @@ const OfferCard = ({icon,text,title,path}:IofferCard) => {
                     title='czytaj więcej'
                 />
             </div>
-        </article>
+        </OfferCardWrapper>
     )
 }
 export default OfferCard;
