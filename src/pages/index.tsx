@@ -1,5 +1,4 @@
 import React from 'react';
-import Contact from '../components/atoms/HomePage/Contact';
 import Layout from '../templates/Layout';
 import {graphql, useStaticQuery} from 'gatsby';
 import Hero from '../components/bacteria/HomePage/Hero';
@@ -9,6 +8,7 @@ import Projects from '../components/bacteria/HomePage/Projects';
 import Offer from '../components/bacteria/HomePage/Offer';
 import FbPosts from '../components/atom/HomePage/FbPosts';
 import Www from '../components/bacteria/HomePage/Www';
+import Contact from '../components/bacteria/HomePage/Contact';
 const HomePage = () => {
   const {allFile} = useStaticQuery(graphql`
   {

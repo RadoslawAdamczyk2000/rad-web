@@ -12,10 +12,10 @@ const OfferCardWrapper = styled.article`
     & > .head{
         background-color:${({theme}) => theme.colors.page.buttons};
         color:${({theme}) => theme.colors.page.title};
-        height:12rem;
+        height:10rem;
         row-gap:1.5rem;
         & > span{
-            font-size:3rem;
+            font-size:1.8rem;
         }
         & > h5{
             font-size:1.75rem;
