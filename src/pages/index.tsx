@@ -7,6 +7,8 @@ import SectionImage from '../components/atom/HomePage/SectionImage';
 import Blog from '../components/bacteria/HomePage/Blog';
 import Projects from '../components/bacteria/HomePage/Projects';
 import Offer from '../components/bacteria/HomePage/Offer';
+import FbPosts from '../components/atom/HomePage/FbPosts';
+import Www from '../components/bacteria/HomePage/Www';
 const HomePage = () => {
   const {allFile} = useStaticQuery(graphql`
   {
@@ -55,6 +57,8 @@ const HomePage = () => {
               imagePath='/static/abacf4454aaf52ec4393aaca3013d178/going-up.svg'
               start={false}
             />
+          <Www/>
+          <FbPosts/>
           <Contact/>
       </Layout>
   )
