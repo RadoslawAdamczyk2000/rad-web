@@ -23,7 +23,8 @@ const HomePage = () => {
     }
   }
   `)
-  console.log(allFile.edges[4].node.publicURL)
+  console.log(allFile.edges[6].node.name)
+  console.log(allFile.edges[6].node.publicURL)
   return(
       <Layout
         metaDescription='Zapraszam do skorzystania z moich usług z zakresu tworzenia stron internetowych oraz kompleksowego pozycjonowania serwisów w wyszukiwarce Google.'

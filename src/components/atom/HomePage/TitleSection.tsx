@@ -1,11 +1,22 @@
 import React from 'react';
 import TitleSectionWrapper from './styles/TitleSectionWrapper';
-const TitleSection = ({title}:{title:string}) => {
+interface ItitleSection {
+    isSmall ?: boolean,
+    title : string
+}
+const TitleSection = ({isSmall=false,title}:ItitleSection) => {
     return(
         <TitleSectionWrapper>
-            <h2>
-                {title}
-            </h2>
+            {
+                isSmall ?
+                <h5>
+                    {title}
+                </h5> :
+                 <h2>
+                     {title}
+                 </h2>
+            }
+           
         </TitleSectionWrapper>
     )
 }
