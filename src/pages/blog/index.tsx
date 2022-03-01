@@ -1,8 +1,8 @@
-import Layout from '../templates/Layout';
+import Layout from '../../templates/Layout';
 import React from 'react';
-import Articles from '../components/bacteria/BlogPage/Articles';
-import Text from '../components/atom/BlogPage/Text';
-import TitlePage from '../components/atom/BlogPage/TitlePage';
+import Articles from '../../components/bacteria/BlogPage/Articles';
+import Text from '../../components/atom/BlogPage/Text';
+import TitlePage from '../../components/atom/BlogPage/TitlePage';
 
 const BlogPage = ({data}) => {
     return(

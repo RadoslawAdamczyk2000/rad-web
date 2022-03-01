@@ -9,8 +9,15 @@ module.exports = {
       `gatsby-plugin-image`,
       `gatsby-plugin-typescript`,
       `gatsby-plugin-sitemap`,
+      `gatsby-plugin-mdx`,
       `gatsby-plugin-sharp`,
       `gatsby-transformer-sharp`,
+      // {
+      //   resolve: "gatsby-plugin-page-creator",
+      //   options: {
+      //     path: `${__dirname}/src/posts`,
+      //   },
+      // },
       {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -37,12 +44,6 @@ module.exports = {
         options: {
           name: `assets`,
           path: `${__dirname}/src/assets/`,
-        },
-      },
-      {
-        resolve: `gatsby-source-datocms`,
-        options: {
-          apiToken: `ed1726e97d820bd336169cf7ac7ddb`,
         },
       },
       {
