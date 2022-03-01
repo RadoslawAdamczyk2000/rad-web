@@ -1,4 +1,4 @@
-import BrandWrapper from '../../../../../styles/Containers/BrandWrapper';
+import BrandWrapper from './styles/BrandWrapper';
 import React from 'react';
 import { Link } from 'gatsby';
 const Brand = () => {

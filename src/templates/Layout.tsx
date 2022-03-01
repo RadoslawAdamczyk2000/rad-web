@@ -1,18 +1,17 @@
 import Footer from  '../components/molecule/Layout/Page/Footer/Footer';
 import Global from '../styles/Global';
 import Head from '../components/atoms/Layout/Head';
-import Navigation from '../components/organism/Layout/Navigation';
 import React from 'react';
 import Wrapper from '../styles/Containers/Wrapper';
+import Navigation from '../components/molecule/Layout/Page/Navigation/Navigation';
 interface Ilayout {
     children : any,
-    isArticle ?: boolean,
     metaDescription : string,
     metaRobots ?: string,
     metaTitle : string,
     canonical ?: string
 }
-const Layout = ({children, isArticle=false, metaDescription, metaRobots, metaTitle, canonical}:Ilayout)  => {
+const Layout = ({children,metaDescription, metaRobots, metaTitle, canonical}:Ilayout)  => {
     return(
         <>
             <Head
@@ -21,9 +20,9 @@ const Layout = ({children, isArticle=false, metaDescription, metaRobots, metaTit
                 metaRobots={metaRobots}
                 metaTitle={metaTitle}
             />
-            <Global isArticle={isArticle}/>
+            <Global/>
             <Navigation/>
-            <Wrapper isArticle={isArticle}>
+            <Wrapper>
                 {children}
             </Wrapper>
             <Footer/>
