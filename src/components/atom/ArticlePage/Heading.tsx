@@ -1,14 +1,15 @@
 import React from 'react';
+import HeadingWrapper from './styles/HeadingWrapper';
 interface Iheading {
     children:any
 }
 const Heading = ({children}) => {
     return(
-        <div>
+        <HeadingWrapper>
             <h2>
                 {children}
             </h2>
-        </div>
+        </HeadingWrapper>
     )
 }
 export default Heading;

@@ -1,3 +1,4 @@
+import MainPosterWrapper from './styles/MainPosterWrapper';
 import React from 'react';
 interface ImainPoster {
     path : string,
@@ -5,13 +6,13 @@ interface ImainPoster {
 }
 const MainPoster = ({path,title}:ImainPoster) => {
     return(
-        <figure>
+        <MainPosterWrapper>
             <img
                 alt={`${title} RadWEB`}
                 src={path}
-                title={title}
+                title={`${title} - RadWEB`}
             />
-        </figure>
+        </MainPosterWrapper>
     )
 }
 export default MainPoster;

@@ -1,14 +1,15 @@
 import React from 'react';
+import TitleWrapper from './styles/TitleWrapper';
 interface Ititle {
     title : string
 }
 const Title = ({title}:Ititle) => {
     return(
-        <div>
+        <TitleWrapper>
             <h1>
                 {title}
             </h1>
-        </div>
+        </TitleWrapper>
     )
 }
 export default Title;

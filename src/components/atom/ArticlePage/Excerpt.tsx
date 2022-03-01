@@ -1,14 +1,15 @@
 import React from 'react';
+import ExcerptWrapper from './styles/ExcerptWrapper';
 interface Iexcerpt {
     children : any
 }
 const Excerpt = ({children}:Iexcerpt) => {
     return(
-        <div>
+        <ExcerptWrapper>
             <p>
                 {children}
             </p>
-        </div>
+        </ExcerptWrapper>
     )
 }
 export default Excerpt;

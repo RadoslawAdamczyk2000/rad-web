@@ -1,23 +1,24 @@
----
-title: Hi, World!
----
-import HeroPost from '../../components/bacteria/ArticlePage/HeroPost.tsx';
-import Layout from '../../templates/Layout.tsx';
-import Excerpt from '../../components/atom/ArticlePage/Excerpt.tsx';
-import Heading from '../../components/atom/ArticlePage/Heading.tsx';
-import LinkPage from '../../components/atom/ArticlePage/LinkPage.tsx';
-import MainPoster from '../../components/atom/ArticlePage/MainPoster.tsx';
-import Poster from '../../components/atom/ArticlePage/Poster.tsx';
-import Source from '../../components/atom/ArticlePage/Source.tsx';
-import Sources from '../../components/bacteria/ArticlePage/Sources.tsx';
-import Text from '../../components/atom/ArticlePage/Text.tsx';
-import Title from '../../components/atom/ArticlePage/Title.tsx';
+import React from 'react';
+import HeroPost from '../../components/bacteria/ArticlePage/HeroPost';
+import Layout from '../../templates/Layout';
+import Excerpt from '../../components/atom/ArticlePage/Excerpt';
+import Heading from '../../components/atom/ArticlePage/Heading';
+import LinkPage from '../../components/atom/ArticlePage/LinkPage';
+import MainPoster from '../../components/atom/ArticlePage/MainPoster';
+import Source from '../../components/atom/ArticlePage/Source';
+import Sources from '../../components/bacteria/ArticlePage/Sources';
+import Text from '../../components/atom/ArticlePage/Text';
+import Title from '../../components/atom/ArticlePage/Title';
 import WrapperContent from '../../components/bacteria/ArticlePage/WrapperContent'
-<Layout
-    metaTitle='Jak powinna wyglądąć dobra strona? - od A do Z - RadWEB'
-    metaDescription='Chcesz się dowiedzieć czym powinna cechować się dobrze wyglądająca strona? W tymże artykule pokrótce przedstawię kilka dobrych zasad.'
-> 
+import ReturnButton from '../../components/atom/ArticlePage/ReturnButton';
+const Page = () => {
+    return(
+        <Layout
+        metaTitle='Jak powinna wyglądąć dobra strona? - od A do Z - RadWEB'
+        metaDescription='Chcesz się dowiedzieć czym powinna cechować się dobrze wyglądająca strona? W tymże artykule pokrótce przedstawię kilka dobrych rad.'
+        >
     <HeroPost>
+        <ReturnButton path='/blog'/>
         <Title title='Cechy dobrej strony internetowej.'></Title>
         <Excerpt>
             W swoim życiu każdy z nas widział setki, jak nie tysiące stron internetowych. Jedne nam przypadły do gustu, inne niekoniecznie. Od czego to zależy? Najważniejszymi czynnikami są prędkość załadowania strony, kolory oraz typografia - to wszystko wpływa w sposób istotny na jakość strony w aspekcie front-end developerskim oraz jakości pozycjonowania. Ta Święta Trójca internetowa, jest swoistym kluczem do odniesienia sukcesu w tej przestrzeni.
@@ -28,10 +29,6 @@ import WrapperContent from '../../components/bacteria/ArticlePage/WrapperContent
         title='poznaj dobre zasady pisania stron internetowych'
     ></MainPoster>
     <WrapperContent>
-        <Poster
-            path='https://cdn.pixabay.com/photo/2015/01/09/11/11/office-594132_960_720.jpg'
-            title='poznaj dobre zasady pisania stron internetowych'
-        ></Poster>
         <Heading>
             Co to jest typografia?
         </Heading> 
@@ -54,7 +51,7 @@ import WrapperContent from '../../components/bacteria/ArticlePage/WrapperContent
             Dobre strony, nie są jeszcze chlebem powszednim w sieci, ale warto podjąć wszystkie możliwe działania aby tak się właśnie stało. Mam nadzieję, że tymi poradami wskazałem Tobie, do czego przywiązać szczególną uwagę.
         </Text>
     </WrapperContent>
-    <Sources>
-        <Source path=''></Source>
-    </Sources>
 </Layout>
+)
+}
+export default Page;

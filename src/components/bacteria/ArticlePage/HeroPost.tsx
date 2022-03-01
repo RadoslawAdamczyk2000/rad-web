@@ -1,12 +1,13 @@
 import React from 'react';
+import HeroPostWrapper from './styles/HeroPostWrapper';
 interface IheroPost {
     children : any
 }
 const HeroPost = ({children}:IheroPost) => {
     return(
-        <header>
+        <HeroPostWrapper>
             {children}
-        </header>
+        </HeroPostWrapper>
     )
 }
 export default HeroPost;
