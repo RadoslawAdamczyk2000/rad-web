@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-const ContactBoxWrapper = styled.div`
+const FooterWrapper = styled.footer`
     align-items:center;
     display:flex;
     flex-direction:column;
-    flex-wrap:nowrap;
     justify-content:center;
-    padding:1.5rem 0;
-    row-gap:2rem;
+    padding:1rem 0;
 `
-export default ContactBoxWrapper;
+export default FooterWrapper;

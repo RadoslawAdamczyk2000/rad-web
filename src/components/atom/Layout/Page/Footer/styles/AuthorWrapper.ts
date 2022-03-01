@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 const AuthorWrapper = styled.div`
     align-items:center;
-    color:${({theme}) => theme.colors.page.background};
+    color:${({theme}) => theme.colors.page.buttons};
     display:flex;
     height:6rem;
     justify-content:center;
