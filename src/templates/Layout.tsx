@@ -1,9 +1,9 @@
-import React from 'react';
-import Head from '../components/atoms/Layout/Head';
-import Footer from '../components/organism/Layout/Footer';
-import Navigation from '../components/organism/Layout/Navigation';
-import Wrapper from '../styles/Containers/Wrapper';
+import Footer from  '../components/molecule/Layout/Page/Footer/Footer';
 import Global from '../styles/Global';
+import Head from '../components/atoms/Layout/Head';
+import Navigation from '../components/organism/Layout/Navigation';
+import React from 'react';
+import Wrapper from '../styles/Containers/Wrapper';
 interface Ilayout {
     children : any,
     isArticle ?: boolean,
@@ -26,7 +26,7 @@ const Layout = ({children, isArticle=false, metaDescription, metaRobots, metaTit
             <Wrapper isArticle={isArticle}>
                 {children}
             </Wrapper>
-            <Footer isArticle={isArticle}/>
+            <Footer/>
         </>
     )
 }

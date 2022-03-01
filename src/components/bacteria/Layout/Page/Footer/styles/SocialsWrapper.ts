@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 const SocialsWrapper = styled.div`
-    color:${({theme}) => theme.colors.article.background};
+    margin:.5rem auto;
     padding:1rem .75rem;
-    width:100%;
+    width:75%;
     & > ul{
         align-items:center;
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
+        gap:1.8rem;
         justify-content:space-evenly;
     }
 `
