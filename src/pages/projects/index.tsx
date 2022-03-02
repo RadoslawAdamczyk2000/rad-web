@@ -8,8 +8,8 @@ import HeadWrapper from '../../styles/Containers/HeadWrapper';
 const ProjectsPage = () => {
     return(
         <Layout
-            metaDescription=''
-            metaTitle=''
+            metaDescription='Szukasz nowych realizacji oraz projektów zrealizowanych przeze mnie? Tu jest idealne miejsce.'
+            metaTitle='Projekty stron i aplikacji www, SEO, Śrem, Poznań - RadWEB'
         >
             <div>
                 <div className='content'>

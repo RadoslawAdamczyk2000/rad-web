@@ -39,7 +39,7 @@ const OfferWwwPage = () => {
                     title='analityka'
                 />
             </LinkButtonsWrapper>
-            <Form/>
+            <Form redirect='https://rad-web.vercel.app/offer/www'/>
             <div>  
                 <Text>
                     <p>

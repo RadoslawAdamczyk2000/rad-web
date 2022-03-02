@@ -35,7 +35,7 @@ const OfferAnalyticsPage = () => {
                     title='oferty'
                 />
             </LinkButtonsWrapper>
-            <Form/>
+            <Form redirect='https://rad-web.vercel.app/offer/analytics'/>
             <div>
                 <Text>
                    

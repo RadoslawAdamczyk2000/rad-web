@@ -42,7 +42,7 @@ const OfferSeoPage = () => {
                     title='analityka'
                 />
             </LinkButtonsWrapper>
-            <Form/>
+            <Form redirect='https://rad-web.vercel.app/offer/seo'/>
             <div>
                 <Text>
                     <p>Każda z topowych wyszukiwarek internetowych ma wiele swoich robotów crawlujących, czyli takich robótów, które we dnie i w nocy przemierzają nieustannie przez niezmieorzone wody internetu, w celu odkrywania nowych stron internetowych przy jednoczesnym docenianiu stron reprezentujących wysoki poziom eksperckości w branży.</p>                    
