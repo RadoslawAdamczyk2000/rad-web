@@ -51,7 +51,7 @@ const offer = {
             id:1,
             path:'/offer/www',
             poster:'https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg',
-            price:300,
+            price:500,
             tag:['www'],
             title:'WWW mini'
         },
@@ -78,7 +78,7 @@ const offer = {
             id:4,
             path:'/offer/www',
             poster:'https://images.unsplash.com/photo-1620473034286-0df143fa2613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80',
-            price:500,
+            price:800,
             tag:['www'],
             title:'WWW standard'
         },
@@ -96,7 +96,7 @@ const offer = {
             id:6,
             path:'/offer/www',
             poster:'https://cdn.pixabay.com/photo/2015/07/17/22/42/typing-849806_960_720.jpg',
-            price:800,
+            price:1200,
             tag:['www'],
             title:'WWW pro'
         },

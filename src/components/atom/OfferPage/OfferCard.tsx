@@ -6,15 +6,16 @@ interface IofferCard {
     description : string,
     path : string,
     price : number,
+    poster : string,
     title : string
 }
-const OfferCard = ({description,path,price,title}:IofferCard) => {
+const OfferCard = ({description,path,price,poster,title}:IofferCard) => {
     return(
         <OfferCardWrapper>
             <figure>
-                <StaticImage
+                <img
                     alt={`${title} poster`}
-                    src='https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_960_720.jpg'
+                    src={poster}
                     style={{
                         height:'100%',
                         objectFit:'cover',

@@ -32,7 +32,7 @@ const Page = () => {
     </HeroProject>
     <MainPoster
         path='/static/976b9c87586b298c8ce2c0ab604947cb/filip-bukowiecki-01.png'
-        title='Aplikacja QuizApp - wiele quizów w jednym miejscu'
+        title='Filip Bukowiecki - v.1.0'
     ></MainPoster>
     <WrapperContent>
         <Excerpt>

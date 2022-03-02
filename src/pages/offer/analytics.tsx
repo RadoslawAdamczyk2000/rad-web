@@ -6,6 +6,7 @@ import LinkButton from '../../components/atom/OfferPage/LinkButton';
 import Form from '../../components/bacteria/OfferPage/Form';
 import LinkButtonsWrapper from '../../components/bacteria/OfferPage/styles/LinkButtonsWrapper';
 import { cities } from '../../data/cities';
+import HeadWrapper from '../../styles/Containers/HeadWrapper';
 const OfferAnalyticsPage = () => {
     return(
         <Layout
@@ -13,10 +14,12 @@ const OfferAnalyticsPage = () => {
             metaTitle='Bezpłatna analiza stron i serwisów internetowych, raporty seo, Śrem, Poznań - RadWEB'
         >
             <div>
+                <HeadWrapper>
                 <TitlePage title='Oferta analizy stron internetowych'/>
                 <Text>
                     Masz już seris, ale nie wiesz jakie podjąć dalsze działania? W tym wyręczy Ciebie bezpłatna analiza, która wskaże na jakich frazach powinieneś się skupić oraz jak powinny wyglądać najbliższe prace. Wyniki takich badań dostaniesz ode mnie w formie raportu wysłanego na podany poniżej Twój adres e-mail. 
                 </Text>
+                </HeadWrapper>
             </div>
             <LinkButtonsWrapper>
                 <LinkButton

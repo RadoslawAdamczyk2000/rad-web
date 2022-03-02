@@ -4,15 +4,16 @@ import React from 'react';
 import ProjectItemWrapper from './styles/ProjectItemWrapper';
 interface IprojectItem {
     icons : Array<any>,
+    image:string,
     path : string,
     title: string
 }
-const ProjectItem = ({icons,path,title}:IprojectItem) => {
+const ProjectItem = ({icons,image,path,title}:IprojectItem) => {
     return(
         <ProjectItemWrapper>
-            <StaticImage
+            <img
                 alt={`${title} poster`}
-                src='https://cdn.pixabay.com/photo/2021/12/28/11/38/trees-6899050_960_720.jpg'
+                src={image}
                 style={{
                     height:'100%',
                     objectFit:'cover',
