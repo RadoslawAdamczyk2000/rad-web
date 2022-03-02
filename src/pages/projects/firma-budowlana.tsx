@@ -17,8 +17,8 @@ import { Link } from 'gatsby';
 const Page = () => {
     return(
         <Layout
-        metaTitle='Aplikacja o filmach - recenzje i oceny filmów, Śrem - RadWEB'
-        metaDescription='Szukasz opini, oceny bądź też plakatu związanego z Twoim ulubionym filmem? Dobrze trafiłeś!'
+        metaTitle='Firma budowlana, strony internetowe Śrem, Poznań - RadWEB'
+        metaDescription='Strony internetowe to moja pasja. Jeśli chcesz zobaczyć mój progress w tej branży, to zapraszam do lektury!'
         >
     <HeroProject>
         <ReturnButton path='/projects'/>
