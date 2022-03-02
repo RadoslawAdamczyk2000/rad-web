@@ -4,6 +4,7 @@ const TextWrapper = styled.article`
     font-size:1.8rem;
     font-weight:300;
     text-align:justify;
+    line-height:3.2rem;
     margin:1.8rem auto;
     & > b,
     & > strong{

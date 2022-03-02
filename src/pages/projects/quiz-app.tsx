@@ -33,7 +33,7 @@ const Page = () => {
     </HeroProject>
     <MainPoster
         path='/static/ff23819522708966314b69c02df44d5b/quiz-app.png'
-        title='Podstawy stron internetowych - HTML'
+        title='Aplikacja QuizApp - wiele quizów w jednym miejscu'
     ></MainPoster>
     <WrapperContent>
         <Excerpt>

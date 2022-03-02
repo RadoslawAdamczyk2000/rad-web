@@ -49,7 +49,7 @@ const TimelineItemWrapper = styled.div`
             justify-content:center;
             margin:.5rem auto;
             padding:.5rem .75rem;
-            text-align:justify;
+            text-align:start;
         }
     }
 `
