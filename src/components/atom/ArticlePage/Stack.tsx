@@ -1,14 +1,13 @@
 import React from 'react';
+import StackWrapper from './styles/StackWrapper';
 interface Istack {
     stack : Array<any>
 }
 const Stack = ({stack}:Istack) => {
     return(
-        <div>
-            <ul>
-                {stack.map(i => <li>{i}</li>)}
-            </ul>
-        </div>
+        <StackWrapper>
+            {stack.map(i => <li>{i}</li>)}
+        </StackWrapper>
     )
 }
 export default Stack;

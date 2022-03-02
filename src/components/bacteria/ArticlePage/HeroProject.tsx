@@ -1,12 +1,13 @@
 import React from 'react';
+import HeroProjectWrapper from './styles/HeroProjectWrapper';
 interface IheroProject {
     children : any
 }
 const HeroProject = ({children}:IheroProject) => {
     return(
-        <header>
+        <HeroProjectWrapper>
             {children}
-        </header>
+        </HeroProjectWrapper>
     )
 }
 export default HeroProject;

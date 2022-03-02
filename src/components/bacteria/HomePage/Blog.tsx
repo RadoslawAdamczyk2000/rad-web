@@ -1,9 +1,10 @@
 import ArticleCard from '../../atom/HomePage/ArticleCard';
+import BlogWrapper from './styles/BlogWrapper';
 import Button from '../../atom/HomePage/Button';
 import React from 'react';
 import Text from '../../atom/HomePage/Text';
 import TitleSection from '../../atom/HomePage/TitleSection';
-import BlogWrapper from './styles/BlogWrapper';
+import {articles} from '../../../data/posts/articles';
 const Blog = () => {
     return(
         <BlogWrapper>
@@ -18,40 +19,28 @@ const Blog = () => {
             </div>
             <div className='cards'>
                 <ArticleCard
-                    articleType='programming'
-                    excerpt='Co rozumiem przez słowo rozwój? Naukę nowych rzeczy, a w przypadku mojej działki, nowych technolo'
-                    path='#'
-                    title='Aplikacja Netflix 2.0 - pierwsze podejście'
+                    articleType={articles[0].variant}
+                    excerpt={articles[0].excerpt}
+                    path={articles[0].path}
+                    title={articles[0].title}
                 />
                 <ArticleCard
-                    articleType='lifestyle'
-                    excerpt='Co rozumiem przez słowo rozwój? Naukę nowych rzeczy, a w przypadku mojej działki, nowych technolo'
-                    path='#'
-                    title='Aplikacja Netflix 2.0 - pierwsze podejście'
+                    articleType={articles[1].variant}
+                    excerpt={articles[1].excerpt}
+                    path={articles[1].path}
+                    title={articles[1].title}
                 />
                 <ArticleCard
-                    articleType='programming'
-                    excerpt='Co rozumiem przez słowo rozwój? Naukę nowych rzeczy, a w przypadku mojej działki, nowych technolo'
-                    path='#'
-                    title='Aplikacja Netflix 2.0 - pierwsze podejście'
+                    articleType={articles[2].variant}
+                    excerpt={articles[2].excerpt}
+                    path={articles[2].path}
+                    title={articles[2].title}
                 />
                 <ArticleCard
-                    articleType='lifestyle'
-                    excerpt='Co rozumiem przez słowo rozwój? Naukę nowych rzeczy, a w przypadku mojej działki, nowych technolo'
-                    path='#'
-                    title='Aplikacja Netflix 2.0 - pierwsze podejście'
-                />
-                <ArticleCard
-                    articleType='programming'
-                    excerpt='Co rozumiem przez słowo rozwój? Naukę nowych rzeczy, a w przypadku mojej działki, nowych technolo'
-                    path='#'
-                    title='Aplikacja Netflix 2.0 - pierwsze podejście'
-                />
-                <ArticleCard
-                    articleType='lifestyle'
-                    excerpt='Co rozumiem przez słowo rozwój? Naukę nowych rzeczy, a w przypadku mojej działki, nowych technolo'
-                    path='#'
-                    title='Aplikacja Netflix 2.0 - pierwsze podejście'
+                    articleType={articles[3].variant}
+                    excerpt={articles[3].excerpt}
+                    path={articles[3].path}
+                    title={articles[3].title}
                 />
             </div>
         </BlogWrapper>

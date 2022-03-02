@@ -1,8 +1,8 @@
-import Layout from '../templates/Layout';
+import Layout from '../../templates/Layout';
 import React from 'react';
-import Projects from '../components/bacteria/ProjectsPage/Projects';
-import TitlePage from '../components/atom/ProjectsPage/TitlePage';
-import Text from '../components/atom/ProjectsPage/Text';
+import Projects from '../../components/bacteria/ProjectsPage/Projects';
+import TitlePage from '../../components/atom/ProjectsPage/TitlePage';
+import Text from '../../components/atom/ProjectsPage/Text';
 
 const ProjectsPage = () => {
     return(

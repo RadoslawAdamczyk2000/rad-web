@@ -27,7 +27,8 @@ import {
         SiApollographql,
         SiKotlin,
         SiSwift,
-        SiSvelte
+        SiSvelte,
+        SiTypescript
     } from 'react-icons/si';
 
 export const tech = {
@@ -58,5 +59,6 @@ export const tech = {
     apollo:<SiApollographql/>,
     kotlin:<SiKotlin/>,
     swift:<SiSwift/>,
-    svelte:<SiSvelte/>
+    svelte:<SiSvelte/>,
+    typescript:<SiTypescript/>
 }
