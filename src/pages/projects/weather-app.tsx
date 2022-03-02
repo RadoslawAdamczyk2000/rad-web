@@ -31,7 +31,7 @@ const Page = () => {
         <LinkPage path='https://weather-app-snowy-omega.vercel.app/'/>
     </HeroProject>
     <MainPoster
-        path='/static/cea37cd970a46ac7cad586af38596716/weather-app.png'
+        path='https://github.com/RadoslawAdamczyk2000/rad-web-content/blob/main/projekty/zdjecia/weather-app.png?raw=true'
         title='WeatherApp - aktualna pogoda z każdego miejsca'
     ></MainPoster>
     <WrapperContent>

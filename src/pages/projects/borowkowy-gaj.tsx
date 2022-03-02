@@ -31,7 +31,7 @@ const Page = () => {
         <LinkPage path='https://borowkowy-gaj.pl/'/>
     </HeroProject>
     <MainPoster
-        path='/static/2d1d1782551a6bbfd0832ef15ae0682f/borowkowy-gaj.png'
+        path='https://github.com/RadoslawAdamczyk2000/rad-web-content/blob/main/projekty/zdjecia/borowkowy-gaj.png?raw=true'
         title='Borówkowy Gaj - borówki amerykańskie spod Kórnika'
     ></MainPoster>
     <WrapperContent>

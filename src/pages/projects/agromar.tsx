@@ -31,7 +31,7 @@ const Page = () => {
         <LinkPage path='https://agromar.netlify.app/'/>
     </HeroProject>
     <MainPoster
-        path='/static/304493c30becb6bc43d3fed3c173264b/agromar.png'
+        path='https://github.com/RadoslawAdamczyk2000/rad-web-content/blob/main/projekty/zdjecia/agromar.png?raw=true'
         title='Agromar - warzywa na eksport'
     ></MainPoster>
     <WrapperContent>

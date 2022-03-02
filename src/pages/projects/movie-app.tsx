@@ -31,7 +31,7 @@ const Page = () => {
         <LinkPage path='https://movie-app-xi-blush.vercel.app/'/>
     </HeroProject>
     <MainPoster
-        path='/static/5ed68415a52d5ea3fc13b8987a95368e/movie-app.png'
+        path='https://github.com/RadoslawAdamczyk2000/rad-web-content/blob/main/projekty/zdjecia/movie-app.png?raw=true'
         title='Movie App - wszystkie filmy w jednym miejscu'
     ></MainPoster>
     <WrapperContent>

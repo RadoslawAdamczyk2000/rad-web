@@ -32,7 +32,7 @@ const Page = () => {
         <LinkPage path='https://quiz-app-lemon-theta.vercel.app/'/>
     </HeroProject>
     <MainPoster
-        path='/static/ff23819522708966314b69c02df44d5b/quiz-app.png'
+        path='https://github.com/RadoslawAdamczyk2000/rad-web-content/blob/main/projekty/zdjecia/quiz-app.png?raw=true'
         title='Aplikacja QuizApp - wiele quizów w jednym miejscu'
     ></MainPoster>
     <WrapperContent>

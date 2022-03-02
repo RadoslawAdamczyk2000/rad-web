@@ -30,7 +30,7 @@ const Page = () => {
         <LinkPage path='https://firma-budowlana.vercel.app/'/>
     </HeroProject>
     <MainPoster
-        path='/static/e89d6a787723113b4bfaf2b92dad669b/firma-budowlana.png'
+        path='https://github.com/RadoslawAdamczyk2000/rad-web-content/blob/main/projekty/zdjecia/firma-budowlana.png?raw=true'
         title='Firma budowlana - po kroku do celu'
     ></MainPoster>
     <WrapperContent>

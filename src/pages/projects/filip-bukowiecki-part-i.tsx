@@ -31,7 +31,7 @@ const Page = () => {
         <LinkPage path='https://filipbukowiecki.vercel.app/'/>
     </HeroProject>
     <MainPoster
-        path='/static/976b9c87586b298c8ce2c0ab604947cb/filip-bukowiecki-01.png'
+        path='https://github.com/RadoslawAdamczyk2000/rad-web-content/blob/main/projekty/zdjecia/filip-bukowiecki-01.png?raw=true'
         title='Filip Bukowiecki - v.1.0'
     ></MainPoster>
     <WrapperContent>
