@@ -6,6 +6,12 @@ export const projects = [
     //     path:'/projects/',
     //     stack:[]
     // },
+    // {
+    //     image:'',
+    //     title:'',
+    //     path:'/projects/',
+    //     stack:[]
+    // },
     {
         image:'/static/304493c30becb6bc43d3fed3c173264b/agromar.png',
         title:'Agromar',
